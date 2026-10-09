@@ -2,21 +2,21 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { ChevronDown, HelpCircle, ArrowRight } from 'lucide-react';
-import { homeFaqs } from '@/lib/content/faqs';
+import { ChevronDown, MessageSquare } from 'lucide-react';
+import { allFaqs } from '@/lib/content/faqs';
 import { FAQPageSchema } from '@/lib/seo/schema';
 import { Button } from '@/components/ui/Button';
 
 export function FaqHomeSection() {
-  const [openId, setOpenId] = useState<string | null>(homeFaqs[0]?.id || null);
+  const [openId, setOpenId] = useState<string | null>(allFaqs[0]?.id || null);
 
   const toggle = (id: string) => {
     setOpenId(openId === id ? null : id);
   };
 
   return (
-    <section className="py-20 bg-white border-t border-slate-200">
-      <FAQPageSchema faqs={homeFaqs} />
+    <section id="faq" className="py-20 bg-white border-t border-slate-200">
+      <FAQPageSchema faqs={allFaqs} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
@@ -32,7 +32,7 @@ export function FaqHomeSection() {
         </div>
 
         <div className="space-y-4">
-          {homeFaqs.map((faq) => {
+          {allFaqs.map((faq) => {
             const isOpen = openId === faq.id;
 
             return (
@@ -66,13 +66,10 @@ export function FaqHomeSection() {
           })}
         </div>
 
-        <div className="mt-10 text-center flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button variant="outline" size="sm" href="/faq" className="flex items-center gap-1.5 font-bold">
-            <span>Voir toutes les questions fréquentes</span>
-            <ArrowRight className="w-4 h-4" />
-          </Button>
-          <Button variant="ghost" size="sm" href="/contact" className="font-semibold">
-            Besoin d'aide ? Contactez notre support
+        <div className="mt-12 text-center">
+          <Button variant="secondary" size="md" href="/contact" className="font-bold">
+            <MessageSquare className="w-4 h-4 text-[#dd1111]" />
+            <span>Une autre question ? Contactez notre support 7j/7</span>
           </Button>
         </div>
       </div>

@@ -15,7 +15,7 @@ export function CompatibilityShowcase() {
   };
 
   return (
-    <section className="py-20 bg-slate-50 border-t border-slate-200">
+    <section id="compatibilite" className="py-20 bg-slate-50 border-t border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase font-extrabold tracking-widest text-[#dd1111] mb-2 inline-block">
@@ -78,23 +78,13 @@ export function CompatibilityShowcase() {
                   <span className="text-[11px] text-slate-500 font-medium">
                     Configuration : {device.setupTime}
                   </span>
-                  {device.guideSlug ? (
-                    <Link
-                      href={`/guide-installation/${device.guideSlug}`}
-                      className="text-xs font-bold text-[#dd1111] hover:text-[#1a088b] flex items-center gap-1 transition-colors"
-                    >
-                      <span>Voir tutoriel</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </Link>
-                  ) : (
-                    <Link
-                      href="/guide-installation"
-                      className="text-xs font-bold text-[#dd1111] hover:text-[#1a088b] flex items-center gap-1 transition-colors"
-                    >
-                      <span>Guide complet</span>
-                      <ChevronRight className="w-3.5 h-3.5" />
-                    </Link>
-                  )}
+                  <Link
+                    href="/contact"
+                    className="text-xs font-bold text-[#dd1111] hover:text-[#1a088b] flex items-center gap-1 transition-colors"
+                  >
+                    <span>Aide à la configuration</span>
+                    <ChevronRight className="w-3.5 h-3.5" />
+                  </Link>
                 </div>
               </div>
             );
@@ -102,8 +92,8 @@ export function CompatibilityShowcase() {
         </div>
 
         <div className="mt-12 text-center">
-          <Button variant="secondary" size="md" href="/compatibilite">
-            Consulter la liste complète des appareils compatibles
+          <Button variant="secondary" size="md" href="/contact">
+            Besoin d'aide pour configurer votre appareil ? Contactez notre support 7j/7
           </Button>
         </div>
       </div>

@@ -43,7 +43,7 @@ export function FeaturesGrid() {
   ];
 
   return (
-    <section className="py-20 bg-slate-50 border-y border-slate-200">
+    <section id="fonctionnalites" className="py-20 bg-slate-50 border-y border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase font-extrabold tracking-widest text-[#dd1111] mb-2 inline-block">
@@ -85,8 +85,8 @@ export function FeaturesGrid() {
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-[#dd1111]">
-                  <Link href="/fonctionnalites" className="flex items-center gap-1 hover:text-[#1a088b] transition-colors">
-                    <span>En savoir plus</span>
+                  <Link href="#tarifs" className="flex items-center gap-1 hover:text-[#1a088b] transition-colors">
+                    <span>Choisir une formule</span>
                     <ChevronRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>

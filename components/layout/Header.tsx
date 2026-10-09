@@ -2,8 +2,9 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Tv, ChevronRight, Zap } from 'lucide-react';
+import { Menu, X, ChevronRight, Zap } from 'lucide-react';
 import { siteConfig } from '@/lib/config/site';
 import { Button } from '@/components/ui/Button';
 
@@ -25,18 +26,7 @@ export function Header() {
     setMobileMenuOpen(false);
   }, [pathname]);
 
-  const navLinks = [
-    { name: 'Accueil', href: '/' },
-    { name: 'Abonnement IPTV', href: '/abonnement-iptv' },
-    { name: 'IPTV France', href: '/iptv-france' },
-    { name: 'Fonctionnalités', href: '/fonctionnalites' },
-    { name: 'Compatibilité', href: '/compatibilite' },
-    { name: 'Guides', href: '/guide-installation' },
-    { name: 'Test 24h', href: '/test-iptv' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'FAQ', href: '/faq' },
-    { name: 'Contact', href: '/contact' },
-  ];
+  const navLinks = siteConfig.navigation;
 
   return (
     <>
@@ -63,8 +53,15 @@ export function Header() {
               className="flex items-center gap-2.5 group focus-visible:ring-2 focus-visible:ring-[#dd1111] rounded-lg p-1"
               aria-label="Premier IPTV : Retour à l'accueil"
             >
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#1a088b] via-[#850d5e] to-[#dd1111] flex items-center justify-center text-white shadow-lg shadow-[#dd1111]/25 group-hover:scale-105 transition-transform duration-200">
-                <Tv className="w-5 h-5" />
+              <div className="relative w-11 h-11 flex-shrink-0 group-hover:scale-105 transition-transform duration-200">
+                <Image
+                  src="/logo.png"
+                  alt="Premier IPTV"
+                  width={44}
+                  height={44}
+                  className="w-full h-full object-contain drop-shadow-md"
+                  priority
+                />
               </div>
               <div className="flex flex-col">
                 <div className="flex items-center gap-1.5">
@@ -84,19 +81,19 @@ export function Header() {
             {/* Desktop Navigation */}
             <nav
               aria-label="Navigation principale"
-              className="hidden xl:flex items-center gap-1"
+              className="hidden lg:flex items-center gap-1"
             >
               {navLinks.map((link) => {
                 const isActive =
                   link.href === '/'
                     ? pathname === '/'
-                    : pathname.startsWith(link.href);
+                    : pathname === link.href;
 
                 return (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`px-3 py-2 text-sm font-medium rounded-lg transition-all duration-150 ${
+                    className={`px-3.5 py-2 text-sm font-semibold rounded-lg transition-all duration-150 ${
                       isActive
                         ? 'text-[#dd1111] bg-[#dd1111]/10 border border-[#dd1111]/30 font-bold shadow-sm'
                         : 'text-slate-700 hover:text-[#dd1111] hover:bg-slate-100'
@@ -111,32 +108,32 @@ export function Header() {
             {/* CTA Buttons */}
             <div className="hidden md:flex items-center gap-3">
               <Link
-                href="/test-iptv"
+                href="/contact"
                 className="text-xs uppercase tracking-wider font-bold text-[#1a088b] hover:text-[#dd1111] px-3 py-2 transition-colors flex items-center gap-1.5"
               >
                 <Zap className="w-3.5 h-3.5 text-[#dd1111]" />
-                <span>Test 24h</span>
+                <span>Support 7j/7</span>
               </Link>
               <Button
                 variant="glow"
                 size="sm"
-                href="/abonnement-iptv"
+                href="/#tarifs"
                 className="group font-bold"
               >
-                <span>Découvrir nos offres</span>
+                <span>Commander</span>
                 <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
               </Button>
             </div>
 
             {/* Mobile Menu Toggle Button */}
-            <div className="flex xl:hidden items-center gap-2">
+            <div className="flex lg:hidden items-center gap-2">
               <Button
                 variant="primary"
                 size="sm"
-                href="/abonnement-iptv"
-                className="hidden sm:inline-flex text-xs px-3 py-1.5"
+                href="/#tarifs"
+                className="inline-flex text-xs px-3 py-1.5 font-bold"
               >
-                Offres
+                Tarifs
               </Button>
               <button
                 type="button"
@@ -157,19 +154,19 @@ export function Header() {
 
         {/* Mobile Navigation Drawer */}
         {mobileMenuOpen && (
-          <div className="xl:hidden bg-white/98 border-b border-slate-200 px-4 pt-3 pb-6 shadow-2xl backdrop-blur-2xl animate-fade-in">
+          <div className="lg:hidden bg-white/98 border-b border-slate-200 px-4 pt-3 pb-6 shadow-2xl backdrop-blur-2xl animate-fade-in">
             <nav className="flex flex-col gap-1.5">
               {navLinks.map((link) => {
                 const isActive =
                   link.href === '/'
                     ? pathname === '/'
-                    : pathname.startsWith(link.href);
+                    : pathname === link.href;
 
                 return (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`px-4 py-3 rounded-xl text-base font-medium flex items-center justify-between transition-colors ${
+                    className={`px-4 py-3 rounded-xl text-base font-semibold flex items-center justify-between transition-colors ${
                       isActive
                         ? 'bg-[#dd1111]/10 text-[#dd1111] border border-[#dd1111]/30 font-bold'
                         : 'text-slate-700 hover:bg-slate-50 hover:text-[#dd1111]'
@@ -185,18 +182,18 @@ export function Header() {
                 <Button
                   variant="glow"
                   size="md"
-                  href="/abonnement-iptv"
+                  href="/#tarifs"
                   className="w-full justify-center font-bold"
                 >
-                  Découvrir nos abonnements
+                  Choisir un abonnement
                 </Button>
                 <Button
                   variant="outline"
                   size="md"
-                  href="/test-iptv"
+                  href="/contact"
                   className="w-full justify-center"
                 >
-                  Demander un test 24h
+                  Contacter le support
                 </Button>
               </div>
             </nav>

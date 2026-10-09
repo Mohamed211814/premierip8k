@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Tv, Mail, Phone, Clock, ShieldCheck, MapPin, MessageSquare } from 'lucide-react';
 import { siteConfig } from '@/lib/config/site';
 
@@ -57,12 +58,18 @@ export function Footer() {
 
       {/* Main Footer Links */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand Column */}
           <div className="lg:col-span-2 flex flex-col gap-4">
-            <Link href="/" className="flex items-center gap-2.5">
-              <div className="w-10 h-10 rounded-xl bg-[#dd1111] flex items-center justify-center text-white shadow-md shadow-black/20">
-                <Tv className="w-5 h-5" />
+            <Link href="/" className="flex items-center gap-2.5 group">
+              <div className="relative w-11 h-11 flex-shrink-0 group-hover:scale-105 transition-transform duration-200">
+                <Image
+                  src="/logo.png"
+                  alt="Premier IPTV"
+                  width={44}
+                  height={44}
+                  className="w-full h-full object-contain drop-shadow-md"
+                />
               </div>
               <span className="text-2xl font-bold tracking-tight text-white">
                 Premier<span className="text-[#dd1111]">IPTV</span>
@@ -91,13 +98,13 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Column 1: Services */}
+          {/* Column 1: Navigation & Sections */}
           <div>
             <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-blue-400/30 pb-2">
-              Abonnements & Services
+              Navigation
             </h3>
             <ul className="flex flex-col gap-2.5 text-xs text-blue-100">
-              {siteConfig.footerLinks.services.map((link) => (
+              {siteConfig.footerLinks.sections.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -110,26 +117,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 2: Guides */}
-          <div>
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-blue-400/30 pb-2">
-              Guides d'installation
-            </h3>
-            <ul className="flex flex-col gap-2.5 text-xs text-blue-100">
-              {siteConfig.footerLinks.guides.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="hover:text-white hover:underline transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 3: Legal & Resources */}
+          {/* Column 2: Legal Pages */}
           <div>
             <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-blue-400/30 pb-2">
               Informations Légales
@@ -147,21 +135,12 @@ export function Footer() {
               ))}
             </ul>
 
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-2 border-b border-blue-400/30 pb-2">
-              Ressources
-            </h3>
-            <ul className="flex flex-col gap-2.5 text-xs text-blue-100">
-              {siteConfig.footerLinks.resources.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="hover:text-white hover:underline transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div className="p-3.5 rounded-xl bg-white/10 border border-white/20 text-xs text-blue-100">
+              <p className="font-bold text-white mb-1">Besoin d'aide ?</p>
+              <Link href="/contact" className="text-amber-300 font-bold hover:underline">
+                Accéder au formulaire de contact →
+              </Link>
+            </div>
           </div>
         </div>
 

@@ -3,10 +3,9 @@ import { Metadata } from 'next';
 import { HeroSection } from '@/components/home/HeroSection';
 import { FeaturesGrid } from '@/components/home/FeaturesGrid';
 import { PricingSection } from '@/components/home/PricingSection';
-import { CompatibilityShowcase } from '@/components/home/CompatibilityShowcase';
 import { FranceAdvantageSection } from '@/components/home/FranceAdvantageSection';
+import { CompatibilityShowcase } from '@/components/home/CompatibilityShowcase';
 import { FaqHomeSection } from '@/components/home/FaqHomeSection';
-import { LatestPostsSection } from '@/components/home/LatestPostsSection';
 import { CtaBanner } from '@/components/home/CtaBanner';
 import { constructMetadata } from '@/lib/seo/metadata';
 
@@ -26,10 +25,13 @@ export default function HomePage() {
       <FranceAdvantageSection />
       <CompatibilityShowcase />
       <FaqHomeSection />
-      <LatestPostsSection />
       <CtaBanner
         title="Profitez de l’expérience Premier IPTV dès aujourd'hui"
         subtitle="Accédez à un catalogue complet de chaînes et VOD 4K en quelques minutes sur votre Smart TV ou boîtier."
+        primaryCtaText="Choisir un abonnement"
+        primaryCtaLink="#tarifs"
+        secondaryCtaText="Contacter l'équipe"
+        secondaryCtaLink="/contact"
       />
     </>
   );
