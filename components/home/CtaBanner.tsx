@@ -43,19 +43,19 @@ export function CtaBanner({
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
               <Button
-                variant="primary"
+                variant="white"
                 size="lg"
                 href={primaryCtaLink}
-                className="w-full sm:w-auto bg-white text-[#1a088b] hover:bg-slate-100 hover:text-[#dd1111] shadow-2xl font-extrabold text-base"
+                className="w-full sm:w-auto shadow-2xl font-extrabold text-base"
               >
                 <span>{primaryCtaText}</span>
                 <ChevronRight className="w-5 h-5" />
               </Button>
               <Button
-                variant="outline"
+                variant="outlineLight"
                 size="lg"
                 href={secondaryCtaLink}
-                className="w-full sm:w-auto bg-white/15 text-white border border-white/40 hover:bg-white hover:text-[#1a088b] font-bold text-base"
+                className="w-full sm:w-auto font-bold text-base"
               >
                 <span>{secondaryCtaText}</span>
               </Button>

@@ -88,10 +88,10 @@ export function HeroSection() {
               <ChevronRight className="w-5 h-5" />
             </Button>
             <Button
-              variant="secondary"
+              variant="white"
               size="lg"
               href="/contact"
-              className="w-full sm:w-auto font-bold text-base px-8 py-4 bg-white text-[#1a088b] hover:bg-slate-100 hover:text-[#dd1111] shadow-xl"
+              className="w-full sm:w-auto font-bold text-base px-8 py-4 shadow-xl"
             >
               <span>Support & Test Premier IPTV</span>
             </Button>

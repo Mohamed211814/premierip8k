@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'glow';
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'glow' | 'white' | 'outlineLight';
   size?: 'sm' | 'md' | 'lg';
   href?: string;
   isExternal?: boolean;
@@ -39,6 +39,10 @@ export function Button({
       'bg-transparent hover:bg-slate-100 text-slate-700 hover:text-[#dd1111] active:scale-[0.98]',
     glow:
       'bg-gradient-to-r from-[#dd1111] via-[#870d4d] to-[#1a088b] hover:from-[#b80c0c] hover:to-[#230eb0] text-white shadow-xl shadow-[#dd1111]/25 active:scale-[0.98]',
+    white:
+      'bg-white hover:bg-slate-100 text-[#1a088b] hover:text-[#dd1111] shadow-xl active:scale-[0.98] font-bold border border-white',
+    outlineLight:
+      'bg-white/10 hover:bg-white/20 text-white hover:text-white border border-white/40 hover:border-white shadow-sm backdrop-blur-sm active:scale-[0.98]',
   };
 
   const combinedClasses = `${baseStyles} ${sizeStyles[size]} ${variantStyles[variant]} ${className}`;

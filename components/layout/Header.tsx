@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Menu, X, ChevronRight, Zap } from 'lucide-react';
+import { Menu, X, ChevronRight } from 'lucide-react';
 import { siteConfig } from '@/lib/config/site';
 import { Button } from '@/components/ui/Button';
 
@@ -107,13 +107,6 @@ export function Header() {
 
             {/* CTA Buttons */}
             <div className="hidden md:flex items-center gap-3">
-              <Link
-                href="/contact"
-                className="text-xs uppercase tracking-wider font-bold text-[#1a088b] hover:text-[#dd1111] px-3 py-2 transition-colors flex items-center gap-1.5"
-              >
-                <Zap className="w-3.5 h-3.5 text-[#dd1111]" />
-                <span>Support 7j/7</span>
-              </Link>
               <Button
                 variant="glow"
                 size="sm"

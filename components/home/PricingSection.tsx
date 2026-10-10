@@ -130,7 +130,12 @@ export function PricingSection({ showTitle = true, limit }: PricingSectionProps)
               </p>
             </div>
           </div>
-          <Button variant="primary" size="md" href="/contact?plan=premier-iptv-famille" className="bg-white text-[#1a088b] hover:bg-slate-100 hover:text-[#dd1111] shadow-lg font-bold flex-shrink-0">
+          <Button
+            variant="white"
+            size="md"
+            href="/contact?plan=premier-iptv-famille"
+            className="flex-shrink-0"
+          >
             Commander Premier IPTV Famille
           </Button>
         </div>
