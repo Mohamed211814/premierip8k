@@ -12,7 +12,7 @@ export function HeroSection() {
       <div className="absolute inset-0 -z-20">
         <Image
           src="/images/hero-bg.jpg"
-          alt="Films et séries disponibles sur Premier IPTV"
+          alt="Abonnement Premier IPTV : Films et séries 4K en streaming"
           fill
           priority
           sizes="100vw"
@@ -34,11 +34,11 @@ export function HeroSection() {
           <div className="flex flex-wrap items-center justify-center gap-2.5 mb-6">
             <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-extrabold bg-[#dd1111] text-white shadow-lg shadow-[#dd1111]/40 uppercase tracking-wide border border-white/20">
               <Zap className="w-3.5 h-3.5 fill-white" />
-              <span>Premier IPTV France • 4K & FHD 60 FPS</span>
+              <span>Premier IPTV France • N°1 des Abonnements IPTV 4K</span>
             </span>
             <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-white/15 text-white backdrop-blur-md border border-white/25 shadow-sm">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span>Serveurs 100% Opérationnels</span>
+              <span>Serveurs Premier IPTV 100% Opérationnels</span>
             </span>
           </div>
 
@@ -53,26 +53,26 @@ export function HeroSection() {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl text-blue-100 leading-relaxed mb-8 max-w-3xl font-normal drop-shadow">
-            Accédez instantanément à plus de <strong className="text-white font-bold">18 000 chaînes</strong> en direct et <strong className="text-white font-bold">65 000 films et séries VOD</strong> en qualité 4K Ultra HD. Une stabilité prouvée sans coupure grâce à notre technologie Anti-Freeze v5.
+            Choisissez l’excellence avec <strong className="text-white font-bold">Premier IPTV</strong> : accédez à plus de <strong className="text-white font-bold">18 000 chaînes Premier IPTV</strong> en direct et <strong className="text-white font-bold">65 000 films et séries VOD</strong> en qualité 4K Ultra HD. La stabilité du service premier IPTV sans coupure grâce aux serveurs Anti Freeze v5.
           </p>
 
           {/* Centered Highlights Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10 w-full max-w-3xl">
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-3 border border-white/15 flex items-center justify-center gap-2 text-xs font-semibold text-white shadow-sm hover:bg-white/15 transition-colors">
               <CheckCircle2 className="w-4 h-4 text-[#ff5252] flex-shrink-0" />
-              <span>Flux 4K à 60 FPS</span>
+              <span>Flux Premier IPTV 4K 60 FPS</span>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-3 border border-white/15 flex items-center justify-center gap-2 text-xs font-semibold text-white shadow-sm hover:bg-white/15 transition-colors">
               <CheckCircle2 className="w-4 h-4 text-[#ff5252] flex-shrink-0" />
-              <span>Anti-Freeze v5</span>
+              <span>Anti Freeze v5 Premier IPTV</span>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-3 border border-white/15 flex items-center justify-center gap-2 text-xs font-semibold text-white shadow-sm hover:bg-white/15 transition-colors">
               <CheckCircle2 className="w-4 h-4 text-[#ff5252] flex-shrink-0" />
-              <span>Multi-Appareils</span>
+              <span>Premier IPTV Multi Appareils</span>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-2xl p-3 border border-white/15 flex items-center justify-center gap-2 text-xs font-semibold text-white shadow-sm hover:bg-white/15 transition-colors">
               <CheckCircle2 className="w-4 h-4 text-[#ff5252] flex-shrink-0" />
-              <span>Sans Engagement</span>
+              <span>Premier IPTV Sans Engagement</span>
             </div>
           </div>
 
@@ -84,7 +84,7 @@ export function HeroSection() {
               href="#tarifs"
               className="w-full sm:w-auto shadow-2xl shadow-[#dd1111]/50 font-extrabold text-base px-8 py-4 bg-[#dd1111] hover:bg-[#b00d0d] text-white border-2 border-white/20"
             >
-              <span>Découvrir nos offres</span>
+              <span>Découvrir les offres Premier IPTV</span>
               <ChevronRight className="w-5 h-5" />
             </Button>
             <Button
@@ -93,7 +93,7 @@ export function HeroSection() {
               href="/contact"
               className="w-full sm:w-auto font-bold text-base px-8 py-4 bg-white text-[#1a088b] hover:bg-slate-100 hover:text-[#dd1111] shadow-xl"
             >
-              <span>Contacter le support</span>
+              <span>Support & Test Premier IPTV</span>
             </Button>
           </div>
 
@@ -108,7 +108,7 @@ export function HeroSection() {
               ))}
             </div>
             <p>
-              <strong className="text-white font-bold">99.8% de satisfaction client</strong> • Activation transmise en moins de 5 minutes
+              <strong className="text-white font-bold">99.8% de satisfaction client Premier IPTV</strong> • Activation transmise en moins de 5 minutes
             </p>
           </div>
         </div>

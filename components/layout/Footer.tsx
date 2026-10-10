@@ -77,7 +77,7 @@ export function Footer() {
             </Link>
 
             <p className="text-xs text-blue-100 leading-relaxed pr-6">
-              Premier IPTV est la référence pour la diffusion de flux télévisuels et VOD haute fidélité en France. Profitez d’une infrastructure serveur européenne ultra-stable pour toutes vos Smart TV, boîtiers Android et smartphones.
+              Premier IPTV est la référence pour la diffusion de flux télévisuels et VOD haute fidélité en France. Profitez d’une infrastructure serveur européenne ultra stable pour toutes vos Smart TV, boîtiers Android et smartphones.
             </p>
 
             <div className="flex flex-col gap-2 pt-2 text-xs text-blue-200">

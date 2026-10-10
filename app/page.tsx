@@ -10,9 +10,9 @@ import { CtaBanner } from '@/components/home/CtaBanner';
 import { constructMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Premier IPTV : Meilleur Abonnement IPTV 4K & FHD en France',
+  title: 'Premier IPTV : Meilleur Abonnement Premier IPTV 4K & FHD en France',
   description:
-    'Découvrez Premier IPTV : service de télévision par internet haute qualité en France. Plus de 18 000 chaînes 4K/FHD, 65 000 films et séries VOD, EPG 7 jours et serveurs Anti-Freeze v5 sans coupure.',
+    'Découvrez Premier IPTV : le service premier IPTV de télévision par internet haute qualité en France. Plus de 18 000 chaînes Premier IPTV 4K/FHD, 65 000 films et séries VOD, EPG 7 jours et serveurs Premier IPTV Anti Freeze v5 sans coupure.',
   canonical: '/',
 });
 
@@ -27,10 +27,10 @@ export default function HomePage() {
       <FaqHomeSection />
       <CtaBanner
         title="Profitez de l’expérience Premier IPTV dès aujourd'hui"
-        subtitle="Accédez à un catalogue complet de chaînes et VOD 4K en quelques minutes sur votre Smart TV ou boîtier."
-        primaryCtaText="Choisir un abonnement"
+        subtitle="Accédez à l’offre complète de chaînes et VOD 4K Premier IPTV en quelques minutes sur votre Smart TV ou boîtier."
+        primaryCtaText="Choisir un abonnement Premier IPTV"
         primaryCtaLink="#tarifs"
-        secondaryCtaText="Contacter l'équipe"
+        secondaryCtaText="Contacter l'équipe Premier IPTV"
         secondaryCtaLink="/contact"
       />
     </>

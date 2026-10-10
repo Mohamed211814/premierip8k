@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} : Meilleur Abonnement IPTV 4K & FHD en France`,
+    default: `${siteConfig.name} : N°1 de l'Abonnement Premier IPTV 4K & FHD en France`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: `${siteConfig.name} : Meilleur Abonnement IPTV 4K & FHD en France`,
+    title: `${siteConfig.name} : N°1 de l'Abonnement Premier IPTV 4K & FHD en France`,
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.name,

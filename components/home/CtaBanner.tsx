@@ -13,12 +13,12 @@ interface CtaBannerProps {
 }
 
 export function CtaBanner({
-  title = "Prêt à transformer votre expérience télévisuelle ?",
-  subtitle = "Rejoignez des milliers d'utilisateurs satisfaits en France et profitez de vos flux 4K dès aujourd'hui.",
-  primaryCtaText = "Choisir mon abonnement",
-  primaryCtaLink = "/abonnement-iptv",
-  secondaryCtaText = "Demander un test 24h",
-  secondaryCtaLink = "/test-iptv",
+  title = "Prêt à transformer votre expérience avec Premier IPTV ?",
+  subtitle = "Rejoignez des milliers d'utilisateurs satisfaits de Premier IPTV en France et profitez de vos flux 4K dès aujourd'hui.",
+  primaryCtaText = "Choisir mon abonnement Premier IPTV",
+  primaryCtaLink = "#tarifs",
+  secondaryCtaText = "Contacter le support Premier IPTV",
+  secondaryCtaLink = "/contact",
 }: CtaBannerProps) {
   return (
     <section className="py-16 relative overflow-hidden bg-white">
@@ -30,7 +30,7 @@ export function CtaBanner({
           <div className="relative z-10 max-w-3xl mx-auto">
             <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-extrabold bg-white/20 text-white border border-white/30 mb-4 shadow-sm backdrop-blur-md">
               <Zap className="w-3.5 h-3.5 text-amber-300" />
-              <span>Activation instantanée en 5 minutes</span>
+              <span>Activation Premier IPTV instantanée en 5 minutes</span>
             </span>
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
@@ -64,15 +64,15 @@ export function CtaBanner({
             <div className="flex flex-wrap items-center justify-center gap-6 text-xs text-blue-100">
               <div className="flex items-center gap-1.5">
                 <Check className="w-4 h-4 text-emerald-300 font-bold" />
-                <span className="text-white font-medium">Sans engagement</span>
+                <span className="text-white font-medium">Premier IPTV Sans engagement</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Check className="w-4 h-4 text-emerald-300 font-bold" />
-                <span className="text-white font-medium">Support français 7j/7</span>
+                <span className="text-white font-medium">Support Premier IPTV 7j/7</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <Check className="w-4 h-4 text-emerald-300 font-bold" />
-                <span className="text-white font-medium">Garantie 99.9% Uptime</span>
+                <span className="text-white font-medium">Garantie 99.9% Uptime Premier IPTV</span>
               </div>
             </div>
           </div>

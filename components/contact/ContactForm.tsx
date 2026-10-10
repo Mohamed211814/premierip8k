@@ -223,7 +223,7 @@ export function ContactForm({ initialPlan = '' }: ContactFormProps) {
 
       <div>
         <label htmlFor="subject" className="block text-xs font-bold text-slate-800 mb-1.5">
-          Sujet de votre demande
+          Sujet de votre demande Premier IPTV
         </label>
         <input
           type="text"
@@ -231,13 +231,14 @@ export function ContactForm({ initialPlan = '' }: ContactFormProps) {
           name="subject"
           value={formData.subject}
           onChange={handleChange}
+          placeholder="Ex: Souscription abonnement Premier IPTV ou aide configuration"
           className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:bg-white focus:border-[#dd1111] focus:outline-none"
         />
       </div>
 
       <div>
         <label htmlFor="message" className="block text-xs font-bold text-slate-800 mb-1.5">
-          Votre Message *
+          Votre Message Premier IPTV *
         </label>
         <textarea
           id="message"
@@ -246,7 +247,7 @@ export function ContactForm({ initialPlan = '' }: ContactFormProps) {
           required
           value={formData.message}
           onChange={handleChange}
-          placeholder="Décrivez votre question, votre appareil ou vos besoins d'assistance..."
+          placeholder="Décrivez votre question sur Premier IPTV, votre matériel ou vos besoins d'assistance..."
           className="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 placeholder-slate-400 text-sm focus:bg-white focus:border-[#dd1111] focus:ring-2 focus:ring-[#dd1111]/20 focus:outline-none resize-none"
         />
       </div>
@@ -262,7 +263,7 @@ export function ContactForm({ initialPlan = '' }: ContactFormProps) {
           className="mt-1 w-4 h-4 rounded border-slate-300 bg-white text-[#dd1111] focus:ring-[#dd1111]"
         />
         <label htmlFor="consent" className="text-xs text-slate-600 leading-normal">
-          J'accepte que mes coordonnées soient utilisées uniquement pour répondre à ma demande dans le respect de la politique de confidentialité.
+          J'accepte que mes coordonnées soient utilisées uniquement par l’équipe Premier IPTV pour traiter ma demande dans le respect de la politique de confidentialité.
         </label>
       </div>
 
@@ -281,7 +282,7 @@ export function ContactForm({ initialPlan = '' }: ContactFormProps) {
         ) : (
           <>
             <Send className="w-4 h-4 mr-2" />
-            <span>Envoyer ma demande</span>
+            <span>Envoyer ma demande Premier IPTV</span>
           </>
         )}
       </Button>

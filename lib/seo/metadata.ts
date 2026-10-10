@@ -27,7 +27,7 @@ export function constructMetadata({
   const url = canonical ? `${siteConfig.url}${canonical}` : siteConfig.url;
   const fullTitle = title 
     ? `${title} | ${siteConfig.name}` 
-    : `${siteConfig.name} : Meilleur Abonnement IPTV 4K & FHD en France`;
+    : `${siteConfig.name} : N°1 de l'Abonnement Premier IPTV 4K & FHD en France`;
 
   return {
     title: fullTitle,

@@ -6,9 +6,9 @@ import { Button } from '@/components/ui/Button';
 export default function NotFound() {
   const helpfulLinks = [
     { name: "Page d'Accueil", href: '/', icon: Home, desc: 'Retourner à la page principale' },
-    { name: 'Nos Abonnements IPTV', href: '/abonnement-iptv', icon: Tv, desc: 'Consulter nos formules 4K' },
-    { name: 'Guides d’Installation', href: '/guide-installation', icon: BookOpen, desc: 'Tutoriels pas à pas par appareil' },
-    { name: 'Foire Aux Questions', href: '/faq', icon: HelpCircle, desc: 'Réponses à vos questions fréquentes' },
+    { name: 'Nos Tarifs & Offres', href: '/#tarifs', icon: Tv, desc: 'Consulter nos formules 4K et 8K' },
+    { name: 'Compatibilité Matérielle', href: '/#compatibilite', icon: BookOpen, desc: 'Tutoriels pas à pas par appareil' },
+    { name: 'Foire Aux Questions', href: '/#faq', icon: HelpCircle, desc: 'Réponses à vos questions fréquentes' },
     { name: 'Support & Contact', href: '/contact', icon: Phone, desc: 'Joindre notre équipe technique' },
   ];
 
@@ -24,7 +24,7 @@ export default function NotFound() {
         </h1>
 
         <p className="text-sm sm:text-base text-slate-600 max-w-md mx-auto mb-8 leading-relaxed">
-          Le programme ou la page que vous recherchez n'est plus accessible ou a changé d'adresse. Retrouvez votre chemin grâce aux liens rapides ci-dessous :
+          Le programme ou la page que vous recherchez n'est plus accessible ou a changé d'adresse. Retrouvez votre chemin grâce aux liens rapides ci dessous :
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 text-left">

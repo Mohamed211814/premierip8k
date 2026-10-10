@@ -20,13 +20,13 @@ export function PricingSection({ showTitle = true, limit }: PricingSectionProps)
           <div className="text-center max-w-3xl mx-auto mb-16">
             <Badge variant="primary" className="mb-3">
               <Zap className="w-3.5 h-3.5 text-[#dd1111]" />
-              <span>Abonnements Sans Engagement</span>
+              <span>Abonnement Premier IPTV Sans Engagement</span>
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-              Des formules adaptées à tous vos besoins de divertissement
+              Tarifs et formules d'abonnement Premier IPTV
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
-              Choisissez la durée qui vous convient. Tous nos abonnements incluent l’accès complet aux chaînes 4K, à la VOD illimitée et au support technique 7j/7.
+              Choisissez votre formule Premier IPTV idéale. Tous nos abonnements Premier IPTV incluent l’accès complet aux flux 4K, à la VOD illimitée et au support technique francophone 7j/7.
             </p>
           </div>
         )}
@@ -61,7 +61,7 @@ export function PricingSection({ showTitle = true, limit }: PricingSectionProps)
                       {plan.name}
                     </h3>
                     <p className="text-xs text-slate-500 font-medium">
-                      Accès {plan.duration} • {plan.screens} {plan.screens > 1 ? 'écrans' : 'écran'}
+                      Accès {plan.duration} Premier IPTV • {plan.screens} {plan.screens > 1 ? 'écrans' : 'écran'}
                     </p>
                   </div>
 
@@ -107,7 +107,7 @@ export function PricingSection({ showTitle = true, limit }: PricingSectionProps)
                   </Button>
                   <p className="text-[10px] text-center text-slate-500 mt-2.5 flex items-center justify-center gap-1">
                     <Shield className="w-3 h-3 text-slate-400" />
-                    <span>Activation immédiate sous 5 min</span>
+                    <span>Activation Premier IPTV en 5 min</span>
                   </p>
                 </div>
               </div>
@@ -123,15 +123,15 @@ export function PricingSection({ showTitle = true, limit }: PricingSectionProps)
             </div>
             <div>
               <h4 className="text-lg font-bold text-white mb-1">
-                Besoin de regarder sur 2 téléviseurs simultanément ?
+                Besoin d'utiliser Premier IPTV sur 2 téléviseurs en simultané ?
               </h4>
               <p className="text-xs sm:text-sm text-blue-100">
-                Découvrez notre formule spéciale <strong>Pack Famille 2 Connexions</strong> à 99,99 € pour 12 mois complets.
+                Découvrez la formule <strong>Premier IPTV Pack Famille 2 Connexions</strong> à 99,99 € pour 12 mois complets.
               </p>
             </div>
           </div>
-          <Button variant="primary" size="md" href="/contact?plan=12-mois-multi" className="bg-white text-[#1a088b] hover:bg-slate-100 hover:text-[#dd1111] shadow-lg font-bold flex-shrink-0">
-            Commander le Pack Famille
+          <Button variant="primary" size="md" href="/contact?plan=premier-iptv-famille" className="bg-white text-[#1a088b] hover:bg-slate-100 hover:text-[#dd1111] shadow-lg font-bold flex-shrink-0">
+            Commander Premier IPTV Famille
           </Button>
         </div>
       </div>

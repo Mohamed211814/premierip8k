@@ -8,9 +8,9 @@ import { ContactForm } from '@/components/contact/ContactForm';
 import { constructMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Contactez le Support Premier IPTV : Assistance Technique France 7j/7',
+  title: 'Contactez le Support Premier IPTV : Assistance & Abonnements Premier IPTV 7j/7',
   description:
-    'Besoin d’aide pour installer votre IPTV ou souscrire à un abonnement ? Contactez l’équipe technique Premier IPTV par formulaire, email ou WhatsApp. Réponse sous 30 min.',
+    'Besoin d’aide pour configurer votre service Premier IPTV ou souscrire à un abonnement Premier IPTV ? Contactez l’équipe technique Premier IPTV France par formulaire ou email. Réponse sous 30 min.',
   canonical: '/contact',
 });
 
@@ -24,19 +24,19 @@ export default async function ContactPage({ searchParams }: PageProps) {
   return (
     <div className="py-10 md:py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Breadcrumbs items={[{ name: 'Contact & Support', url: '/contact' }]} />
+        <Breadcrumbs items={[{ name: 'Contact Premier IPTV', url: '/contact' }]} />
 
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto my-12">
           <Badge variant="primary" className="mb-4">
             <MessageSquare className="w-3.5 h-3.5" />
-            <span>Support Client & Assistance Technique 7j/7</span>
+            <span>Support Client & Assistance Technique Premier IPTV 7j/7</span>
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">
-            Contactez notre équipe <span className="gradient-text">Premier IPTV</span>
+            Contactez le support officiel <span className="gradient-text">Premier IPTV</span>
           </h1>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            Une question sur votre abonnement, une aide à la configuration sur votre téléviseur ou une demande spécifique ? Notre équipe francophone est à votre écoute.
+            Une question sur votre abonnement Premier IPTV, une demande d'assistance pour configurer votre application ou une commande spécifique ? L’équipe Premier IPTV France est à votre écoute 7j/7.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export default async function ContactPage({ searchParams }: PageProps) {
           <div className="lg:col-span-5 space-y-6">
             <div className="rounded-3xl bg-white p-6 sm:p-8 border border-slate-200 shadow-sm">
               <h2 className="text-xl font-bold text-slate-900 mb-6">
-                Nos canaux d'assistance directe
+                Canaux d'assistance Premier IPTV
               </h2>
 
               <div className="space-y-6 text-xs sm:text-sm">
@@ -54,8 +54,8 @@ export default async function ContactPage({ searchParams }: PageProps) {
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">Par Email</h3>
-                    <p className="text-xs text-slate-500 mt-0.5">Pour les commandes, factures et questions générales</p>
+                    <h3 className="font-bold text-slate-900 text-sm">Email Support Premier IPTV</h3>
+                    <p className="text-xs text-slate-500 mt-0.5">Commandes, activations et demandes générales Premier IPTV</p>
                     <a
                       href={`mailto:${siteConfig.contact.email}`}
                       className="text-[#dd1111] hover:underline font-bold block mt-1 text-xs"
@@ -70,8 +70,8 @@ export default async function ContactPage({ searchParams }: PageProps) {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">Assistance Téléphonique</h3>
-                    <p className="text-xs text-slate-500 mt-0.5">Ligne support client basée en France</p>
+                    <h3 className="font-bold text-slate-900 text-sm">Ligne Téléphonique Premier IPTV</h3>
+                    <p className="text-xs text-slate-500 mt-0.5">Support client Premier IPTV basé en France</p>
                     <p className="text-emerald-700 font-bold mt-1 text-xs">{siteConfig.contact.phone}</p>
                   </div>
                 </div>
@@ -81,8 +81,8 @@ export default async function ContactPage({ searchParams }: PageProps) {
                     <MessageSquare className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">WhatsApp & Telegram</h3>
-                    <p className="text-xs text-slate-500 mt-0.5">Assistance rapide en direct lors de la configuration</p>
+                    <h3 className="font-bold text-slate-900 text-sm">Assistance Directe Premier IPTV</h3>
+                    <p className="text-xs text-slate-500 mt-0.5">Assistance rapide en direct pour vos appareils Premier IPTV</p>
                     <p className="text-slate-800 font-bold mt-1 text-xs">{siteConfig.contact.whatsapp}</p>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export default async function ContactPage({ searchParams }: PageProps) {
                     <Clock className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">Horaires d'Ouverture</h3>
+                    <h3 className="font-bold text-slate-900 text-sm">Horaires Support Premier IPTV</h3>
                     <p className="text-xs text-slate-600 mt-1 font-medium">{siteConfig.contact.hours}</p>
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export default async function ContactPage({ searchParams }: PageProps) {
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">Adresse Administrative</h3>
+                    <h3 className="font-bold text-slate-900 text-sm">Siège Premier IPTV France</h3>
                     <p className="text-xs text-slate-500 mt-1">
                       {siteConfig.contact.address.street}, {siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}, {siteConfig.contact.address.country}
                     </p>
@@ -114,9 +114,9 @@ export default async function ContactPage({ searchParams }: PageProps) {
             <div className="rounded-2xl bg-slate-50 border border-slate-200 p-5 text-xs text-slate-700 flex items-start gap-3">
               <ShieldCheck className="w-5 h-5 text-[#dd1111] flex-shrink-0 mt-0.5" />
               <div>
-                <p className="font-bold text-slate-900 mb-0.5">Garantie de réponse rapide</p>
+                <p className="font-bold text-slate-900 mb-0.5">Garantie de réponse Premier IPTV</p>
                 <p className="text-slate-600 leading-relaxed">
-                  Notre délai moyen de traitement d'un ticket de support est de <strong>15 à 30 minutes</strong> pendant les heures de diffusion.
+                  Notre délai moyen de réponse pour toute question liée à votre abonnement Premier IPTV est de <strong>15 à 30 minutes</strong>.
                 </p>
               </div>
             </div>
@@ -126,10 +126,10 @@ export default async function ContactPage({ searchParams }: PageProps) {
           <div className="lg:col-span-7">
             <div className="rounded-3xl bg-white p-6 sm:p-10 border-2 border-[#1a088b]/20 shadow-xl relative overflow-hidden">
               <h2 className="text-2xl font-bold text-slate-900 mb-2">
-                Envoyez-nous un message
+                Formulaire de Demande Premier IPTV
               </h2>
               <p className="text-xs sm:text-sm text-slate-500 mb-6">
-                Remplissez le formulaire ci-dessous et notre service technique vous recontactera sans délai.
+                Renseignez vos informations ci dessous pour commander votre abonnement Premier IPTV ou demander une assistance technique.
               </p>
 
               <ContactForm initialPlan={plan} />

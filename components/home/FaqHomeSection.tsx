@@ -21,13 +21,13 @@ export function FaqHomeSection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <span className="text-xs uppercase font-extrabold tracking-widest text-[#dd1111] mb-2 inline-block">
-            Questions Fréquentes
+            Questions Fréquentes Premier IPTV
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Tout ce que vous devez savoir avant de commencer
+            Tout ce que vous devez savoir sur le service Premier IPTV
           </h2>
           <p className="text-slate-600 text-sm sm:text-base">
-            Des réponses claires à vos questions techniques et commerciales sur notre service Premier IPTV.
+            Des réponses complètes à vos questions techniques et commerciales sur l’abonnement Premier IPTV en France.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export function FaqHomeSection() {
         <div className="mt-12 text-center">
           <Button variant="secondary" size="md" href="/contact" className="font-bold">
             <MessageSquare className="w-4 h-4 text-[#dd1111]" />
-            <span>Une autre question ? Contactez notre support 7j/7</span>
+            <span>Une autre question sur Premier IPTV ? Contactez notre support 7j/7</span>
           </Button>
         </div>
       </div>

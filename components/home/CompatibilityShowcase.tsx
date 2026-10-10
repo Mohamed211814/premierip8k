@@ -19,13 +19,13 @@ export function CompatibilityShowcase() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs uppercase font-extrabold tracking-widest text-[#dd1111] mb-2 inline-block">
-            Compatibilité Matérielle
+            Compatibilité Matérielle Premier IPTV
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Fonctionne instantanément sur tous vos écrans
+            Le service Premier IPTV fonctionne instantanément sur tous vos écrans
           </h2>
           <p className="text-slate-600 text-base leading-relaxed">
-            Pas besoin d'acheter de nouveau matériel : configurez simplement votre application préférée sur votre équipement actuel.
+            Pas besoin de nouveau matériel : configurez simplement votre abonnement Premier IPTV sur votre équipement actuel en quelques minutes.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export function CompatibilityShowcase() {
 
                   <div className="space-y-2 mb-4 text-xs">
                     <p className="text-slate-700 font-bold">
-                      Applications recommandées :
+                      Lecteurs Premier IPTV recommandés :
                     </p>
                     <div className="flex flex-wrap gap-1.5">
                       {device.recommendedApps.map((app) => (
@@ -82,7 +82,7 @@ export function CompatibilityShowcase() {
                     href="/contact"
                     className="text-xs font-bold text-[#dd1111] hover:text-[#1a088b] flex items-center gap-1 transition-colors"
                   >
-                    <span>Aide à la configuration</span>
+                    <span>Support Premier IPTV</span>
                     <ChevronRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>
@@ -93,7 +93,7 @@ export function CompatibilityShowcase() {
 
         <div className="mt-12 text-center">
           <Button variant="secondary" size="md" href="/contact">
-            Besoin d'aide pour configurer votre appareil ? Contactez notre support 7j/7
+            Besoin d'aide pour configurer Premier IPTV sur votre appareil ? Contactez notre support 7j/7
           </Button>
         </div>
       </div>
