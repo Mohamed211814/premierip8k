@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Play, ShieldCheck, Zap, Tv, CheckCircle2, ChevronRight, Star, Film, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
+import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon';
 
 export function HeroSection() {
   return (
@@ -90,10 +91,12 @@ export function HeroSection() {
             <Button
               variant="white"
               size="lg"
-              href="/contact"
-              className="w-full sm:w-auto font-bold text-base px-8 py-4 shadow-xl"
+              href="https://wa.me/212779395271?text=Bonjour,%20je%20souhaite%20commander%20un%20abonnement%20Premier%20TV."
+              isExternal={true}
+              className="w-full sm:w-auto font-bold text-base px-8 py-4 shadow-xl flex items-center justify-center gap-2"
             >
-              <span>Support & Test Premier IPTV</span>
+              <WhatsAppIcon className="w-5 h-5 fill-current text-emerald-600" />
+              <span>Commander sur WhatsApp</span>
             </Button>
           </div>
 

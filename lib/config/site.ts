@@ -10,8 +10,10 @@ export const siteConfig = {
   contact: {
     email: "contact@premieriptv.fr",
     supportEmail: "support@premieriptv.fr",
-    phone: "+33 1 89 71 20 40",
-    whatsapp: "+33 7 56 90 12 34",
+    phone: "Support en ligne & WhatsApp 7j/7",
+    whatsapp: "+212 7 79 39 52 71",
+    whatsappDisplay: "Support 7j/7",
+    whatsappLink: "https://wa.me/212779395271",
     telegram: "https://t.me/PremierIPTV_Support",
     hours: "Du lundi au dimanche : 08h00 à 23h00 (Heure de Paris)",
     address: {
@@ -46,10 +48,7 @@ export const siteConfig = {
       { name: "Assistance & Support 7j/7", href: "/contact" },
     ],
     legal: [
-      { name: "Mentions Légales", href: "/mentions-legales" },
-      { name: "Politique de Confidentialité", href: "/politique-de-confidentialite" },
-      { name: "Conditions Générales de Vente", href: "/conditions-generales" },
-      { name: "Politique des Cookies", href: "/politique-de-cookies" },
+      { name: "Informations Légales", href: "/legal" },
     ],
   },
 };

@@ -4,6 +4,7 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { CookieConsent } from '@/components/ui/CookieConsent';
+import { WhatsAppFloatingButton } from '@/components/ui/WhatsAppFloatingButton';
 import { WebSiteSchema, OrganizationSchema } from '@/lib/seo/schema';
 import { siteConfig } from '@/lib/config/site';
 
@@ -100,6 +101,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <CookieConsent />
+        <WhatsAppFloatingButton />
       </body>
     </html>
   );

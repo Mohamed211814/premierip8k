@@ -4,6 +4,7 @@ import { Check, Zap, Sparkles, Shield, HelpCircle } from 'lucide-react';
 import { pricingPlans } from '@/lib/content/pricing';
 import { Button } from '@/components/ui/Button';
 import { Badge } from '@/components/ui/Badge';
+import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon';
 
 interface PricingSectionProps {
   showTitle?: boolean;
@@ -101,13 +102,15 @@ export function PricingSection({ showTitle = true, limit }: PricingSectionProps)
                     variant={isHighlight ? 'glow' : 'secondary'}
                     size="md"
                     href={plan.ctaLink}
-                    className="w-full justify-center text-sm font-bold shadow-md"
+                    isExternal={true}
+                    className="w-full justify-center text-sm font-bold shadow-md flex items-center gap-2 whitespace-nowrap"
                   >
-                    {plan.ctaText}
+                    <WhatsAppIcon className="w-4 h-4 fill-current flex-shrink-0" />
+                    <span>{plan.ctaText}</span>
                   </Button>
                   <p className="text-[10px] text-center text-slate-500 mt-2.5 flex items-center justify-center gap-1">
                     <Shield className="w-3 h-3 text-slate-400" />
-                    <span>Activation Premier IPTV en 5 min</span>
+                    <span>Activation Premier IPTV en 5 min via WhatsApp</span>
                   </p>
                 </div>
               </div>
@@ -133,10 +136,12 @@ export function PricingSection({ showTitle = true, limit }: PricingSectionProps)
           <Button
             variant="white"
             size="md"
-            href="/contact?plan=premier-iptv-famille"
-            className="flex-shrink-0"
+            href="https://wa.me/212779395271?text=Bonjour,%20je%20souhaite%20commander%20l%27abonnement%20Premier%20TV%20Pack%20Famille%202%20%C3%89crans%20(99,99%20%E2%82%AC)."
+            isExternal={true}
+            className="flex-shrink-0 flex items-center gap-2 whitespace-nowrap"
           >
-            Commander Premier IPTV Famille
+            <WhatsAppIcon className="w-4 h-4 fill-current flex-shrink-0 text-emerald-600" />
+            <span>Commander Pack Famille</span>
           </Button>
         </div>
       </div>

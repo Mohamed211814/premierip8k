@@ -31,7 +31,7 @@ export function CookieConsent() {
     <div
       role="dialog"
       aria-label="Gestion des cookies"
-      className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:max-w-md z-50 p-5 rounded-2xl bg-white/95 border border-slate-200 shadow-2xl backdrop-blur-xl animate-fade-in"
+      className="fixed bottom-4 left-4 right-4 md:left-6 md:right-auto md:max-w-md z-40 p-5 rounded-2xl bg-white/95 border border-slate-200 shadow-2xl backdrop-blur-xl animate-fade-in"
     >
       <div className="flex items-start gap-3">
         <div className="p-2.5 rounded-xl bg-[#dd1111]/10 text-[#dd1111] border border-[#dd1111]/30 flex-shrink-0 mt-0.5">
@@ -44,7 +44,7 @@ export function CookieConsent() {
           <p className="text-xs text-slate-600 leading-relaxed mb-3">
             Nous utilisons des cookies essentiels pour assurer le bon fonctionnement du site et mesurer l’audience de façon anonymisée. Consultez notre{' '}
             <Link
-              href="/politique-de-cookies"
+              href="/legal#cookies"
               className="text-[#dd1111] font-semibold hover:underline"
             >
               politique des cookies

@@ -20,8 +20,8 @@ export const pricingPlans: PricingPlan[] = [
       'Assistance technique Premier IPTV francophone 7j/7',
       'Activation automatique immédiate',
     ],
-    ctaText: 'Choisir Premier IPTV 1 Mois',
-    ctaLink: '/contact?plan=premier-iptv-1-mois',
+    ctaText: 'Commander',
+    ctaLink: 'https://wa.me/212779395271?text=Bonjour,%20je%20souhaite%20commander%20l%27abonnement%20Premier%20TV%201%20Mois%20(14,99%20%E2%82%AC).',
   },
   {
     id: 'plan-3-months',
@@ -44,8 +44,8 @@ export const pricingPlans: PricingPlan[] = [
       'Assistance technique Premier IPTV prioritaire 7j/7',
       'Activation automatique immédiate',
     ],
-    ctaText: 'Choisir Premier IPTV 3 Mois',
-    ctaLink: '/contact?plan=premier-iptv-3-mois',
+    ctaText: 'Commander',
+    ctaLink: 'https://wa.me/212779395271?text=Bonjour,%20je%20souhaite%20commander%20l%27abonnement%20Premier%20TV%203%20Mois%20(29,99%20%E2%82%AC).',
   },
   {
     id: 'plan-6-months',
@@ -70,8 +70,8 @@ export const pricingPlans: PricingPlan[] = [
       'Assistance Premier IPTV VIP 7j/7',
       'Activation automatique immédiate',
     ],
-    ctaText: 'Choisir Premier IPTV 6 Mois',
-    ctaLink: '/contact?plan=premier-iptv-6-mois',
+    ctaText: 'Commander',
+    ctaLink: 'https://wa.me/212779395271?text=Bonjour,%20je%20souhaite%20commander%20l%27abonnement%20Premier%20TV%206%20Mois%20(44,99%20%E2%82%AC).',
   },
   {
     id: 'plan-12-months',
@@ -96,8 +96,8 @@ export const pricingPlans: PricingPlan[] = [
       'Support Premier IPTV VIP dédié 24h/24 & 7j/7',
       'Activation immédiate avec guide pas à pas',
     ],
-    ctaText: 'Choisir Premier IPTV 12 Mois',
-    ctaLink: '/contact?plan=premier-iptv-12-mois',
+    ctaText: 'Commander',
+    ctaLink: 'https://wa.me/212779395271?text=Bonjour,%20je%20souhaite%20commander%20l%27abonnement%20Premier%20TV%2012%20Mois%20(64,99%20%E2%82%AC).',
   },
   {
     id: 'plan-24-months-multi',
@@ -120,8 +120,8 @@ export const pricingPlans: PricingPlan[] = [
       'Support Premier IPTV VIP prioritaire 7j/7',
       'Activation instantanée pour 2 appareils',
     ],
-    ctaText: 'Choisir Premier IPTV Famille',
-    ctaLink: '/contact?plan=premier-iptv-famille',
+    ctaText: 'Commander',
+    ctaLink: 'https://wa.me/212779395271?text=Bonjour,%20je%20souhaite%20commander%20l%27abonnement%20Premier%20TV%20Pack%20Famille%202%20%C3%89crans%20(99,99%20%E2%82%AC).',
   },
 ];
 

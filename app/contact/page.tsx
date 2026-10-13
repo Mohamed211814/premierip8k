@@ -5,6 +5,7 @@ import { siteConfig } from '@/lib/config/site';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Badge } from '@/components/ui/Badge';
 import { ContactForm } from '@/components/contact/ContactForm';
+import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon';
 import { constructMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = constructMetadata({
@@ -66,24 +67,31 @@ export default async function ContactPage({ searchParams }: PageProps) {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 border border-emerald-200 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 border border-blue-200 flex items-center justify-center flex-shrink-0">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">Ligne Téléphonique Premier IPTV</h3>
-                    <p className="text-xs text-slate-500 mt-0.5">Support client Premier IPTV basé en France</p>
-                    <p className="text-emerald-700 font-bold mt-1 text-xs">{siteConfig.contact.phone}</p>
+                    <h3 className="font-bold text-slate-900 text-sm">Assistance & Support Client</h3>
+                    <p className="text-xs text-slate-500 mt-0.5">Support technique francophone réactif 7j/7</p>
+                    <p className="text-blue-700 font-bold mt-1 text-xs">Disponible en ligne et sur WhatsApp</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#1a088b]/10 text-[#1a088b] border border-[#1a088b]/20 flex items-center justify-center flex-shrink-0">
-                    <MessageSquare className="w-5 h-5" />
+                <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-200">
+                  <div className="w-10 h-10 rounded-xl bg-[#25D366] text-white flex items-center justify-center flex-shrink-0 shadow-md">
+                    <WhatsAppIcon className="w-5 h-5 fill-current" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">Assistance Directe Premier IPTV</h3>
-                    <p className="text-xs text-slate-500 mt-0.5">Assistance rapide en direct pour vos appareils Premier IPTV</p>
-                    <p className="text-slate-800 font-bold mt-1 text-xs">{siteConfig.contact.whatsapp}</p>
+                    <h3 className="font-bold text-slate-900 text-sm">WhatsApp Support & Commandes</h3>
+                    <p className="text-xs text-slate-500 mt-0.5">Commande immédiate et activation en 5 minutes</p>
+                    <a
+                      href="https://wa.me/212779395271?text=Bonjour,%20je%20souhaite%20commander%20un%20abonnement%20Premier%20TV."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-emerald-700 hover:text-emerald-800 font-extrabold block mt-1 text-xs hover:underline"
+                    >
+                      Discuter directement sur WhatsApp (Support 7j/7) →
+                    </a>
                   </div>
                 </div>
 

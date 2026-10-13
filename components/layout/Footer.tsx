@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Tv, Mail, Phone, Clock, ShieldCheck, MapPin, MessageSquare } from 'lucide-react';
 import { siteConfig } from '@/lib/config/site';
+import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon';
 
 export function Footer() {
   const currentYear = 2026;
@@ -93,7 +94,18 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#dd1111] flex-shrink-0" />
-                <span>{siteConfig.contact.phone} (Support technique)</span>
+                <span>{siteConfig.contact.phone}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <WhatsAppIcon className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                <a
+                  href="https://wa.me/212779395271?text=Bonjour,%20je%20souhaite%20commander%20un%20abonnement%20Premier%20TV."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-emerald-300 transition-colors font-semibold"
+                >
+                  WhatsApp : Discuter & Commander en direct
+                </a>
               </div>
             </div>
           </div>
@@ -150,20 +162,12 @@ export function Footer() {
             © {currentYear} {siteConfig.name}. Tous droits réservés. Service de streaming et diffusion télévisuelle haute définition.
           </p>
           <div className="flex items-center gap-4 text-xs text-blue-100">
-            <Link href="/mentions-legales" className="hover:text-white hover:underline transition-colors">
-              Mentions Légales
+            <Link href="/legal" className="hover:text-white hover:underline transition-colors font-bold">
+              Informations Légales
             </Link>
             <span>•</span>
-            <Link href="/politique-de-confidentialite" className="hover:text-white hover:underline transition-colors">
-              Vie Privée
-            </Link>
-            <span>•</span>
-            <Link href="/conditions-generales" className="hover:text-white hover:underline transition-colors">
-              CGV
-            </Link>
-            <span>•</span>
-            <Link href="/politique-de-cookies" className="hover:text-white hover:underline transition-colors">
-              Cookies
+            <Link href="/contact" className="hover:text-white hover:underline transition-colors">
+              Contact & Support
             </Link>
           </div>
         </div>
