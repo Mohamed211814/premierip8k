@@ -8,20 +8,14 @@ export const siteConfig = {
   locale: "fr_FR",
   lang: "fr",
   contact: {
-    email: "contact@premieriptv.fr",
-    supportEmail: "support@premieriptv.fr",
+    email: "iptvusapro@gmail.com",
+    supportEmail: "iptvusapro@gmail.com",
     phone: "Support en ligne & WhatsApp 7j/7",
     whatsapp: "+212 7 79 39 52 71",
     whatsappDisplay: "Support 7j/7",
     whatsappLink: "https://wa.me/212779395271",
     telegram: "https://t.me/PremierIPTV_Support",
     hours: "Du lundi au dimanche : 08h00 à 23h00 (Heure de Paris)",
-    address: {
-      street: "12 Avenue de l'Opéra",
-      city: "Paris",
-      postalCode: "75001",
-      country: "France",
-    },
   },
   social: {
     twitter: "https://twitter.com/PremierIPTV_FR",

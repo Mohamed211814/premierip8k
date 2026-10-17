@@ -1,6 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { Mail, Phone, Clock, MapPin, MessageSquare, ShieldCheck, HelpCircle, Zap } from 'lucide-react';
+import { Mail, Phone, Clock, MessageSquare, ShieldCheck, HelpCircle, Zap } from 'lucide-react';
 import { siteConfig } from '@/lib/config/site';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Badge } from '@/components/ui/Badge';
@@ -102,18 +102,6 @@ export default async function ContactPage({ searchParams }: PageProps) {
                   <div>
                     <h3 className="font-bold text-slate-900 text-sm">Horaires Support Premier IPTV</h3>
                     <p className="text-xs text-slate-600 mt-1 font-medium">{siteConfig.contact.hours}</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-slate-900 text-sm">Siège Premier IPTV France</h3>
-                    <p className="text-xs text-slate-500 mt-1">
-                      {siteConfig.contact.address.street}, {siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}, {siteConfig.contact.address.country}
-                    </p>
                   </div>
                 </div>
               </div>

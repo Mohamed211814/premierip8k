@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Send, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon';
 
 interface ContactFormProps {
   initialPlan?: string;
@@ -103,25 +104,38 @@ export function ContactForm({ initialPlan = '' }: ContactFormProps) {
         <p className="text-sm text-slate-700 mb-6 max-w-md mx-auto leading-relaxed">
           Merci {formData.name}. Notre équipe technique a bien reçu votre demande et vous répondra sous 30 minutes par email ({formData.email}).
         </p>
-        <Button
-          variant="outline"
-          size="sm"
-          onClick={() => {
-            setStatus('idle');
-            setFormData({
-              name: '',
-              email: '',
-              phone: '',
-              subject: 'Demande générale',
-              device: 'Smart TV',
-              message: '',
-              consent: false,
-              honeypot: '',
-            });
-          }}
-        >
-          Envoyer un autre message
-        </Button>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <a
+            href={`https://wa.me/212779395271?text=${encodeURIComponent(
+              `Bonjour, je viens de vous envoyer un message via le site.\nNom : ${formData.name}\nSujet : ${formData.subject}`
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold text-xs transition-colors shadow-md"
+          >
+            <WhatsAppIcon className="w-4 h-4 fill-current" />
+            <span>Discuter en direct sur WhatsApp</span>
+          </a>
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => {
+              setStatus('idle');
+              setFormData({
+                name: '',
+                email: '',
+                phone: '',
+                subject: 'Demande générale',
+                device: 'Smart TV',
+                message: '',
+                consent: false,
+                honeypot: '',
+              });
+            }}
+          >
+            Envoyer un autre message
+          </Button>
+        </div>
       </div>
     );
   }

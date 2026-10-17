@@ -72,7 +72,7 @@ NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=
 NEXT_PUBLIC_BING_SITE_VERIFICATION=
 
 # Configuration support & alertes email
-CONTACT_EMAIL_RECEIVER=support@premieriptv.fr
+CONTACT_EMAIL_RECEIVER=iptvusapro@gmail.com
 ```
 
 ### 2. Commandes de développement et production

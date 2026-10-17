@@ -85,10 +85,8 @@ export default function LegalPage() {
                 <ul className="list-disc pl-5 space-y-1 text-slate-600">
                   <li><strong>Raison sociale :</strong> {siteConfig.legalName}</li>
                   <li><strong>Marque commerciale :</strong> Premier IPTV</li>
-                  <li><strong>Siège social :</strong> {siteConfig.contact.address.street}, {siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}, {siteConfig.contact.address.country}</li>
-                  <li><strong>Numéro d'immatriculation :</strong> SIRET 894 120 450 00018 / RCS Paris</li>
-                  <li><strong>Numéro de TVA intracommunautaire :</strong> FR 42 894120450</li>
-                  <li><strong>Contact administratif :</strong> <a href={`mailto:${siteConfig.contact.email}`} className="text-[#dd1111] font-bold hover:underline">{siteConfig.contact.email}</a></li>
+                  <li><strong>Service :</strong> Plateforme numérique de streaming en ligne</li>
+                  <li><strong>Contact administratif & support :</strong> <a href={`mailto:${siteConfig.contact.email}`} className="text-[#dd1111] font-bold hover:underline">{siteConfig.contact.email}</a></li>
                 </ul>
               </div>
 

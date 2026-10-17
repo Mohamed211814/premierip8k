@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Tv, Mail, Phone, Clock, ShieldCheck, MapPin, MessageSquare } from 'lucide-react';
+import { Tv, Mail, Phone, Clock, ShieldCheck, MessageSquare } from 'lucide-react';
 import { siteConfig } from '@/lib/config/site';
 import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon';
 
@@ -82,10 +82,6 @@ export function Footer() {
             </p>
 
             <div className="flex flex-col gap-2 pt-2 text-xs text-blue-200">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-[#dd1111] flex-shrink-0" />
-                <span>{siteConfig.contact.address.street}, {siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}, {siteConfig.contact.address.country}</span>
-              </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#dd1111] flex-shrink-0" />
                 <a href={`mailto:${siteConfig.contact.email}`} className="hover:text-white transition-colors">

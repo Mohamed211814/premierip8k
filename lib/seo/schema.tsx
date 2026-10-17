@@ -12,13 +12,6 @@ export function OrganizationSchema() {
     url: siteConfig.url,
     logo: `${siteConfig.url}/images/logo.png`,
     description: siteConfig.description,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: siteConfig.contact.address.street,
-      addressLocality: siteConfig.contact.address.city,
-      postalCode: siteConfig.contact.address.postalCode,
-      addressCountry: siteConfig.contact.address.country,
-    },
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: siteConfig.contact.phone,
