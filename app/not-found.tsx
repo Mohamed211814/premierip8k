@@ -20,7 +20,7 @@ export default function NotFound() {
         </span>
 
         <h1 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-          Page introuvable ou déplacée
+          Premier IPTV : Page introuvable ou déplacée
         </h1>
 
         <p className="text-sm sm:text-base text-slate-600 max-w-md mx-auto mb-8 leading-relaxed">

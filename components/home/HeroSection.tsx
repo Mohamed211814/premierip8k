@@ -45,16 +45,15 @@ export function HeroSection() {
 
           {/* Main Centered Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.12] mb-6 max-w-4xl drop-shadow-lg">
-            Votre service{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff4d4d] via-white to-[#9d97ff]">
-              premier IPTV
+              Premier IPTV
             </span>{' '}
-            haute définition en France
+            : Votre service haute définition en France
           </h1>
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl text-blue-100 leading-relaxed mb-8 max-w-3xl font-normal drop-shadow">
-            Choisissez l’excellence avec <strong className="text-white font-bold">Premier IPTV</strong> : accédez à plus de <strong className="text-white font-bold">18 000 chaînes Premier IPTV</strong> en direct et <strong className="text-white font-bold">65 000 films et séries VOD</strong> en qualité 4K Ultra HD. La stabilité du service premier IPTV sans coupure grâce aux serveurs Anti Freeze v5.
+            <strong className="text-white font-bold">Premier IPTV</strong> : choisissez l’excellence et accédez à plus de <strong className="text-white font-bold">18 000 chaînes Premier IPTV</strong> en direct et <strong className="text-white font-bold">65 000 films et séries VOD</strong> en qualité 4K Ultra HD. La stabilité du service premier IPTV sans coupure grâce aux serveurs Anti Freeze v5.
           </p>
 
           {/* Centered Highlights Grid */}

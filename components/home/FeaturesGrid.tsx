@@ -6,37 +6,37 @@ export function FeaturesGrid() {
   const features = [
     {
       icon: Tv,
-      title: 'Flux Premier IPTV 4K UHD & FHD 60 FPS',
+      title: 'Premier IPTV : Flux 4K UHD & FHD 60 FPS',
       description: 'Visionnez vos compétitions sportives et vos films avec Premier IPTV en profitant d’une netteté cristalline et d’une fluidité maximale à 60 images par seconde.',
       badge: 'Qualité native 4K',
     },
     {
       icon: ShieldCheck,
-      title: 'Technologie Premier IPTV Anti Freeze v5',
+      title: 'Premier IPTV : Technologie Anti Freeze v5',
       description: 'Infrastructure de serveurs Premier IPTV redondante avec basculement automatique de charge pour éliminer les micro coupures et les temps de chargement.',
       badge: 'Stabilité Premier IPTV',
     },
     {
       icon: Clock,
-      title: 'Guide TV Premier IPTV (EPG) & Replay 72h',
+      title: 'Premier IPTV : Guide TV (EPG) & Replay 72h',
       description: 'Consultez la grille des programmes Premier IPTV en direct et rattrapez vos émissions et matchs manqués jusqu’à 3 jours en arrière.',
       badge: 'Replay inclus',
     },
     {
       icon: Smartphone,
-      title: 'Abonnement Premier IPTV Multi Appareils',
+      title: 'Premier IPTV : Multi Appareils & Écrans',
       description: 'Votre service Premier IPTV fonctionne sans configuration complexe sur Smart TV Samsung, LG, boîtiers Android TV, Fire TV Stick, Apple TV, PC et smartphones.',
       badge: 'Multi écrans',
     },
     {
       icon: Layers,
-      title: 'Vidéothèque VOD & Séries Premier IPTV',
+      title: 'Premier IPTV : Vidéothèque VOD & Séries',
       description: 'Accédez au catalogue Premier IPTV de plus de 65 000 titres avec audio français, versions multilingues et sous titres mis à jour chaque semaine.',
       badge: 'VOD Premier IPTV',
     },
     {
       icon: Headset,
-      title: 'Assistance Technique Premier IPTV 7j/7',
+      title: 'Premier IPTV : Assistance Technique 7j/7',
       description: 'Une équipe d’experts Premier IPTV basée en France à votre disposition par email, formulaire et messagerie pour vous guider pas à pas.',
       badge: 'Support Premier IPTV',
     },
@@ -50,7 +50,7 @@ export function FeaturesGrid() {
             Avantages Premier IPTV France
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Des performances Premier IPTV pensées pour les exigences du direct
+            Premier IPTV : Des performances pensées pour les exigences du direct
           </h2>
           <p className="text-slate-600 text-base leading-relaxed">
             L’infrastructure Premier IPTV a été conçue pour surmonter les limites des flux traditionnels et vous garantir une expérience télévisuelle premier IPTV sans compromis.

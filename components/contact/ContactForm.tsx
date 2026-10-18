@@ -100,7 +100,7 @@ export function ContactForm({ initialPlan = '' }: ContactFormProps) {
         <div className="w-14 h-14 rounded-full bg-emerald-500/15 text-emerald-600 border border-emerald-500/30 flex items-center justify-center mx-auto mb-4">
           <CheckCircle2 className="w-8 h-8" />
         </div>
-        <h3 className="text-xl font-bold text-slate-900 mb-2">Message envoyé avec succès !</h3>
+        <h3 className="text-xl font-bold text-slate-900 mb-2">Premier IPTV : Message envoyé avec succès !</h3>
         <p className="text-sm text-slate-700 mb-6 max-w-md mx-auto leading-relaxed">
           Merci {formData.name}. Notre équipe technique a bien reçu votre demande et vous répondra sous 30 minutes par email ({formData.email}).
         </p>

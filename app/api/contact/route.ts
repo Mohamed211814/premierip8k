@@ -68,7 +68,7 @@ export async function POST(request: Request) {
         const mailHtml = `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e2e8f0; border-radius: 12px; background: #ffffff;">
             <div style="background: #1a088b; padding: 15px 20px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
-              <h2 style="color: #ffffff; margin: 0; font-size: 20px;">Nouveau Message de Contact Premier IPTV</h2>
+              <h2 style="color: #ffffff; margin: 0; font-size: 20px;">Premier IPTV : Nouveau Message de Contact</h2>
             </div>
             
             <p style="font-size: 14px; color: #475569; margin-bottom: 20px;">

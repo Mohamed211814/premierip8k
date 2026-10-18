@@ -109,7 +109,7 @@ export function Footer() {
           {/* Column 1: Navigation & Sections */}
           <div>
             <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-blue-400/30 pb-2">
-              Navigation
+              Premier IPTV : Navigation
             </h3>
             <ul className="flex flex-col gap-2.5 text-xs text-blue-100">
               {siteConfig.footerLinks.sections.map((link) => (
@@ -128,7 +128,7 @@ export function Footer() {
           {/* Column 2: Legal Pages */}
           <div>
             <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4 border-b border-blue-400/30 pb-2">
-              Informations Légales
+              Premier IPTV : Informations Légales
             </h3>
             <ul className="flex flex-col gap-2.5 text-xs text-blue-100 mb-6">
               {siteConfig.footerLinks.legal.map((link) => (

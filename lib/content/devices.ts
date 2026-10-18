@@ -3,7 +3,7 @@ import { CompatibleDevice } from '@/types/content';
 export const compatibleDevices: CompatibleDevice[] = [
   {
     id: 'smart-tv',
-    name: 'Smart TV Samsung & LG',
+    name: 'Premier IPTV sur Smart TV Samsung & LG',
     category: 'Téléviseurs connectés',
     icon: 'Tv',
     recommendedApps: ['IBO Player', 'SmartOne IPTV', 'IPTV Smarters Pro', 'Smart IPTV', 'SET IPTV'],
@@ -14,7 +14,7 @@ export const compatibleDevices: CompatibleDevice[] = [
   },
   {
     id: 'android-tv',
-    name: 'Box Android TV & Google TV',
+    name: 'Premier IPTV sur Box Android TV & Google TV',
     category: 'Boîtiers & Décodeurs',
     icon: 'Cpu',
     recommendedApps: ['TiviMate IPTV Player', 'IPTV Smarters Pro', 'XCIPTV Player', 'OTT Navigator'],
@@ -25,7 +25,7 @@ export const compatibleDevices: CompatibleDevice[] = [
   },
   {
     id: 'firestick',
-    name: 'Amazon Fire TV Stick & Cube',
+    name: 'Premier IPTV sur Amazon Fire TV Stick & Cube',
     category: 'Clés de streaming',
     icon: 'Flame',
     recommendedApps: ['IPTV Smarters Pro', 'TiviMate', 'IBO Player Pro', 'Downloader App'],
@@ -36,7 +36,7 @@ export const compatibleDevices: CompatibleDevice[] = [
   },
   {
     id: 'apple-tv',
-    name: 'Apple TV, iPad & iPhone',
+    name: 'Premier IPTV sur Apple TV, iPad & iPhone',
     category: 'Écosystème Apple',
     icon: 'Apple',
     recommendedApps: ['IPTV Smarters Player', 'Smarters Player Lite', 'GSE Smart IPTV', 'iPlayTV'],
@@ -47,7 +47,7 @@ export const compatibleDevices: CompatibleDevice[] = [
   },
   {
     id: 'pc-mac',
-    name: 'Ordinateurs Windows & macOS',
+    name: 'Premier IPTV sur PC Windows & macOS',
     category: 'Ordinateurs',
     icon: 'Monitor',
     recommendedApps: ['IPTV Smarters Pro Windows/Mac', 'VLC Media Player', 'MyIPTV Player'],
@@ -58,7 +58,7 @@ export const compatibleDevices: CompatibleDevice[] = [
   },
   {
     id: 'mag-formuler',
-    name: 'Boîtiers Dédiés MAG & Formuler',
+    name: 'Premier IPTV sur Boîtiers MAG & Formuler',
     category: 'Boîtiers spécialisés',
     icon: 'Layers',
     recommendedApps: ['MyTVOnline 2 / 3 (Formuler)', 'Portail Stalker / Ministra (MAG)'],

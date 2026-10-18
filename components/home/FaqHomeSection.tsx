@@ -56,7 +56,7 @@ export function FaqHomeSection() {
             Questions Fréquentes Premier IPTV
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Tout ce que vous devez savoir sur le service Premier IPTV
+            Premier IPTV : Tout ce que vous devez savoir sur notre service
           </h2>
           <p className="text-slate-600 text-sm sm:text-base max-w-2xl mx-auto">
             Des réponses complètes à vos questions techniques, juridiques et commerciales sur l’abonnement Premier IPTV en France.
@@ -163,7 +163,7 @@ export function FaqHomeSection() {
           <div className="text-center py-12 px-4 rounded-2xl bg-slate-50 border border-slate-200">
             <HelpCircle className="w-10 h-10 text-slate-400 mx-auto mb-3" />
             <h3 className="text-sm font-bold text-slate-800 mb-1">
-              Aucune question trouvée pour cette recherche
+              Premier IPTV FAQ : Aucune question trouvée pour cette recherche
             </h3>
             <p className="text-xs text-slate-500 mb-4">
               Essayez un autre mot clé ou réinitialisez les filtres.

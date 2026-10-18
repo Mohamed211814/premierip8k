@@ -22,7 +22,7 @@ export function CompatibilityShowcase() {
             Compatibilité Matérielle Premier IPTV
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Le service Premier IPTV fonctionne instantanément sur tous vos écrans
+            Premier IPTV : Compatible instantanément avec tous vos écrans
           </h2>
           <p className="text-slate-600 text-base leading-relaxed">
             Pas besoin de nouveau matériel : configurez simplement votre abonnement Premier IPTV sur votre équipement actuel en quelques minutes.

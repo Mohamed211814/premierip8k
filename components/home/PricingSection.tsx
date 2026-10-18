@@ -24,7 +24,7 @@ export function PricingSection({ showTitle = true, limit }: PricingSectionProps)
               <span>Abonnement Premier IPTV Sans Engagement</span>
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-              Tarifs et formules d'abonnement Premier IPTV
+              Premier IPTV : Tarifs et formules d'abonnement
             </h2>
             <p className="text-slate-600 text-base leading-relaxed">
               Choisissez votre formule Premier IPTV idéale. Tous nos abonnements Premier IPTV incluent l’accès complet aux flux 4K, à la VOD illimitée et au support technique francophone 7j/7.
@@ -126,7 +126,7 @@ export function PricingSection({ showTitle = true, limit }: PricingSectionProps)
             </div>
             <div>
               <h4 className="text-lg font-bold text-white mb-1">
-                Besoin d'utiliser Premier IPTV sur 2 téléviseurs en simultané ?
+                Premier IPTV : Besoin d'utiliser le service sur 2 téléviseurs simultanés ?
               </h4>
               <p className="text-xs sm:text-sm text-blue-100">
                 Découvrez la formule <strong>Premier IPTV Pack Famille 2 Connexions</strong> à 99,99 € pour 12 mois complets.

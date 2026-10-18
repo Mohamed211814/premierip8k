@@ -26,7 +26,7 @@ export default function HomePage() {
       <CompatibilityShowcase />
       <FaqHomeSection />
       <CtaBanner
-        title="Profitez de l’expérience Premier IPTV dès aujourd'hui"
+        title="Premier IPTV : Profitez de la meilleure expérience TV dès aujourd'hui"
         subtitle="Accédez à l’offre complète de chaînes et VOD 4K Premier IPTV en quelques minutes sur votre Smart TV ou boîtier."
         primaryCtaText="Choisir un abonnement Premier IPTV"
         primaryCtaLink="#tarifs"

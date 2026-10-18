@@ -39,7 +39,7 @@ export function CookieConsent() {
         </div>
         <div className="flex-1">
           <h3 className="text-sm font-bold text-slate-900 mb-1">
-            Respect de votre vie privée
+            Premier IPTV : Respect de votre vie privée
           </h3>
           <p className="text-xs text-slate-600 leading-relaxed mb-3">
             Nous utilisons des cookies essentiels pour assurer le bon fonctionnement du site et mesurer l’audience de façon anonymisée. Consultez notre{' '}

@@ -9,7 +9,7 @@ import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon';
 import { constructMetadata } from '@/lib/seo/metadata';
 
 export const metadata: Metadata = constructMetadata({
-  title: 'Contactez le Support Premier IPTV : Assistance & Abonnements Premier IPTV 7j/7',
+  title: 'Premier IPTV Support : Assistance & Abonnements Premier IPTV 7j/7',
   description:
     'Besoin d’aide pour configurer votre service Premier IPTV ou souscrire à un abonnement Premier IPTV ? Contactez l’équipe technique Premier IPTV France par formulaire ou email. Réponse sous 30 min.',
   canonical: '/contact',
@@ -34,7 +34,7 @@ export default async function ContactPage({ searchParams }: PageProps) {
             <span>Support Client & Assistance Technique Premier IPTV 7j/7</span>
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">
-            Contactez le support officiel <span className="gradient-text">Premier IPTV</span>
+            <span className="gradient-text">Premier IPTV</span> : Contactez notre support officiel 7j/7
           </h1>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
             Une question sur votre abonnement Premier IPTV, une demande d'assistance pour configurer votre application ou une commande spécifique ? L’équipe Premier IPTV France est à votre écoute 7j/7.
@@ -46,7 +46,7 @@ export default async function ContactPage({ searchParams }: PageProps) {
           <div className="lg:col-span-5 space-y-6">
             <div className="rounded-3xl bg-white p-6 sm:p-8 border border-slate-200 shadow-sm">
               <h2 className="text-xl font-bold text-slate-900 mb-6">
-                Canaux d'assistance Premier IPTV
+                Premier IPTV : Canaux d'assistance & support
               </h2>
 
               <div className="space-y-6 text-xs sm:text-sm">
@@ -55,7 +55,7 @@ export default async function ContactPage({ searchParams }: PageProps) {
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">Email Support Premier IPTV</h3>
+                    <h3 className="font-bold text-slate-900 text-sm">Premier IPTV : Email Support</h3>
                     <p className="text-xs text-slate-500 mt-0.5">Commandes, activations et demandes générales Premier IPTV</p>
                     <a
                       href={`mailto:${siteConfig.contact.email}`}
@@ -71,7 +71,7 @@ export default async function ContactPage({ searchParams }: PageProps) {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">Assistance & Support Client</h3>
+                    <h3 className="font-bold text-slate-900 text-sm">Premier IPTV : Assistance & Support Client</h3>
                     <p className="text-xs text-slate-500 mt-0.5">Support technique francophone réactif 7j/7</p>
                     <p className="text-blue-700 font-bold mt-1 text-xs">Disponible en ligne et sur WhatsApp</p>
                   </div>
@@ -82,7 +82,7 @@ export default async function ContactPage({ searchParams }: PageProps) {
                     <WhatsAppIcon className="w-5 h-5 fill-current" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">WhatsApp Support & Commandes</h3>
+                    <h3 className="font-bold text-slate-900 text-sm">Premier IPTV : WhatsApp Support & Commandes</h3>
                     <p className="text-xs text-slate-500 mt-0.5">Commande immédiate et activation en 5 minutes</p>
                     <a
                       href="https://wa.me/212779395271?text=Bonjour,%20je%20souhaite%20commander%20un%20abonnement%20Premier%20TV."
@@ -100,7 +100,7 @@ export default async function ContactPage({ searchParams }: PageProps) {
                     <Clock className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-slate-900 text-sm">Horaires Support Premier IPTV</h3>
+                    <h3 className="font-bold text-slate-900 text-sm">Premier IPTV : Horaires du support technique</h3>
                     <p className="text-xs text-slate-600 mt-1 font-medium">{siteConfig.contact.hours}</p>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ export default async function ContactPage({ searchParams }: PageProps) {
           <div className="lg:col-span-7">
             <div className="rounded-3xl bg-white p-6 sm:p-10 border-2 border-[#1a088b]/20 shadow-xl relative overflow-hidden">
               <h2 className="text-2xl font-bold text-slate-900 mb-2">
-                Formulaire de Demande Premier IPTV
+                Premier IPTV : Formulaire de demande & assistance
               </h2>
               <p className="text-xs sm:text-sm text-slate-500 mb-6">
                 Renseignez vos informations ci dessous pour commander votre abonnement Premier IPTV ou demander une assistance technique.

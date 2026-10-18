@@ -13,7 +13,7 @@ interface CtaBannerProps {
 }
 
 export function CtaBanner({
-  title = "Prêt à transformer votre expérience avec Premier IPTV ?",
+  title = "Premier IPTV : Profitez de la meilleure expérience TV dès aujourd'hui",
   subtitle = "Rejoignez des milliers d'utilisateurs satisfaits de Premier IPTV en France et profitez de vos flux 4K dès aujourd'hui.",
   primaryCtaText = "Choisir mon abonnement Premier IPTV",
   primaryCtaLink = "#tarifs",

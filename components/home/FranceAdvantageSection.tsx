@@ -5,22 +5,22 @@ export function FranceAdvantageSection() {
   const points = [
     {
       icon: Server,
-      title: 'Datacenters Premier IPTV & Peering Direct',
+      title: 'Premier IPTV : Datacenters & Peering Direct',
       description: 'Connexions directes des serveurs Premier IPTV aux points d’échange internet majeurs en France (France IX Paris). Temps de latence minimal (< 15 ms).',
     },
     {
       icon: Wifi,
-      title: 'Premier IPTV Optimisé pour les FAI Français',
+      title: 'Premier IPTV : Optimisé pour les FAI Français',
       description: 'Flux Premier IPTV calibrés pour fonctionner sans bridage sur Orange, Free, SFR, Bouygues Telecom et réseaux mobiles 4G/5G.',
     },
     {
       icon: Globe,
-      title: 'Chaînes Premier IPTV Nationales & Régionales',
+      title: 'Premier IPTV : Chaînes Nationales & Régionales',
       description: 'Accès complet au bouquet Premier IPTV français en qualité native 1080p 50/60 FPS et 4K HDR avec EPG complet.',
     },
     {
       icon: Activity,
-      title: 'Haute Disponibilité Premier IPTV Soirées de Match',
+      title: 'Premier IPTV : Haute Disponibilité Soirées de Match',
       description: 'Infrastructure Premier IPTV élastique absorbant les pics d’audience lors des rencontres de Ligue des Champions et tournois majeurs.',
     },
   ];
@@ -37,7 +37,7 @@ export function FranceAdvantageSection() {
                 Infrastructure Dédiée Premier IPTV France
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4">
-                Une diffusion Premier IPTV pensée pour le public français
+                Premier IPTV : Une diffusion pensée pour le public français
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed mb-6">
                 Le streaming premier IPTV de qualité dépend avant tout de la proximité des serveurs et de l’absence d’intermédiaires lents. L’architecture Premier IPTV garantit une fluidité continue sur tout le territoire.
