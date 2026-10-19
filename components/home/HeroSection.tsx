@@ -53,7 +53,7 @@ export function HeroSection() {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl text-blue-100 leading-relaxed mb-8 max-w-3xl font-normal drop-shadow">
-            <strong className="text-white font-bold">Premier IPTV</strong> : choisissez l’excellence et accédez à plus de <strong className="text-white font-bold">18 000 chaînes Premier IPTV</strong> en direct et <strong className="text-white font-bold">65 000 films et séries VOD</strong> en qualité 4K Ultra HD. La stabilité du service premier IPTV sans coupure grâce aux serveurs Anti Freeze v5.
+            <strong className="text-white font-bold">Premier IPTV</strong> : choisissez l’excellence et accédez à plus de <strong className="text-white font-bold">22 000 chaînes Premier IPTV</strong> en direct et <strong className="text-white font-bold">160 000 films et séries VOD</strong> en qualité 4K Ultra HD. La stabilité du service premier IPTV sans coupure grâce aux serveurs Anti Freeze v5.
           </p>
 
           {/* Centered Highlights Grid */}

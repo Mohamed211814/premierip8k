@@ -55,13 +55,14 @@ export function Button({
           target="_blank"
           rel="noopener noreferrer"
           className={combinedClasses}
+          onClick={props.onClick as any}
         >
           {children}
         </a>
       );
     }
     return (
-      <Link href={href} className={combinedClasses}>
+      <Link href={href} className={combinedClasses} onClick={props.onClick as any}>
         {children}
       </Link>
     );

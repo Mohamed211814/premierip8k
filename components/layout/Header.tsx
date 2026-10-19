@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-import { Menu, X, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { siteConfig } from '@/lib/config/site';
 import { Button } from '@/components/ui/Button';
 
@@ -24,6 +24,51 @@ export function Header() {
   // Close mobile menu on route change
   useEffect(() => {
     setMobileMenuOpen(false);
+  }, [pathname]);
+
+  // Handle smooth scroll when navigating to an anchor or root from external/same page
+  const handleNavClick = useCallback(
+    (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>, href: string) => {
+      if (href === '/') {
+        if (pathname === '/') {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        setMobileMenuOpen(false);
+        return;
+      }
+
+      if (href.startsWith('/#') || href.startsWith('#')) {
+        const hash = href.includes('#') ? href.split('#')[1] : '';
+        if (pathname === '/' && hash) {
+          e.preventDefault();
+          const targetEl = document.getElementById(hash);
+          if (targetEl) {
+            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            window.history.pushState(null, '', href);
+          }
+          setMobileMenuOpen(false);
+          return;
+        }
+      }
+
+      setMobileMenuOpen(false);
+    },
+    [pathname]
+  );
+
+  // If page loads with a hash (e.g. from /contact to /#tarifs), ensure smooth scroll after mount
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hash) {
+      const hashId = window.location.hash.substring(1);
+      const targetEl = document.getElementById(hashId);
+      if (targetEl) {
+        const timer = setTimeout(() => {
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 120);
+        return () => clearTimeout(timer);
+      }
+    }
   }, [pathname]);
 
   const navLinks = siteConfig.navigation;
@@ -50,6 +95,7 @@ export function Header() {
             {/* Logo */}
             <Link
               href="/"
+              onClick={(e) => handleNavClick(e, '/')}
               className="flex items-center gap-2.5 group focus-visible:ring-2 focus-visible:ring-[#dd1111] rounded-lg p-1"
               aria-label="Premier IPTV : Retour à l'accueil"
             >
@@ -93,6 +139,7 @@ export function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
+                    onClick={(e) => handleNavClick(e, link.href)}
                     className={`px-3.5 py-2 text-sm font-semibold rounded-lg transition-all duration-150 ${
                       isActive
                         ? 'text-[#dd1111] bg-[#dd1111]/10 border border-[#dd1111]/30 font-bold shadow-sm'
@@ -111,6 +158,7 @@ export function Header() {
                 variant="glow"
                 size="sm"
                 href="/#tarifs"
+                onClick={(e) => handleNavClick(e, '/#tarifs')}
                 className="group font-bold"
               >
                 <span>Commander</span>
@@ -124,31 +172,51 @@ export function Header() {
                 variant="primary"
                 size="sm"
                 href="/#tarifs"
+                onClick={(e) => handleNavClick(e, '/#tarifs')}
                 className="inline-flex text-xs px-3 py-1.5 font-bold"
               >
                 Tarifs
               </Button>
               <button
                 type="button"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="p-2.5 rounded-xl bg-slate-100 text-slate-800 hover:text-[#dd1111] border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#dd1111]"
+                onClick={() => setMobileMenuOpen((prev) => !prev)}
+                className="relative p-2.5 rounded-xl bg-slate-100 text-slate-800 hover:text-[#dd1111] hover:bg-slate-200/80 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-[#dd1111] transition-all duration-200 active:scale-95"
                 aria-expanded={mobileMenuOpen}
                 aria-label={mobileMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
               >
-                {mobileMenuOpen ? (
-                  <X className="w-6 h-6" />
-                ) : (
-                  <Menu className="w-6 h-6" />
-                )}
+                <div className="w-6 h-6 relative flex items-center justify-center" aria-hidden="true">
+                  <span
+                    className={`absolute h-0.5 w-5 bg-current rounded-full transform transition-all duration-300 ease-in-out ${
+                      mobileMenuOpen ? 'rotate-45 translate-y-0' : '-translate-y-1.5'
+                    }`}
+                  />
+                  <span
+                    className={`absolute h-0.5 w-5 bg-current rounded-full transition-all duration-200 ease-in-out ${
+                      mobileMenuOpen ? 'opacity-0 scale-0' : 'opacity-100 scale-100'
+                    }`}
+                  />
+                  <span
+                    className={`absolute h-0.5 w-5 bg-current rounded-full transform transition-all duration-300 ease-in-out ${
+                      mobileMenuOpen ? '-rotate-45 translate-y-0' : 'translate-y-1.5'
+                    }`}
+                  />
+                </div>
               </button>
             </div>
           </div>
         </div>
 
-        {/* Mobile Navigation Drawer */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden bg-white/98 border-b border-slate-200 px-4 pt-3 pb-6 shadow-2xl backdrop-blur-2xl animate-fade-in">
-            <nav className="flex flex-col gap-1.5">
+        {/* Mobile Navigation Drawer with smooth height/opacity transition */}
+        <div
+          className={`lg:hidden grid transition-all duration-300 ease-in-out ${
+            mobileMenuOpen
+              ? 'grid-rows-[1fr] opacity-100 border-b border-slate-200 shadow-2xl'
+              : 'grid-rows-[0fr] opacity-0 border-b-0 pointer-events-none'
+          } bg-white/98 backdrop-blur-2xl`}
+          aria-hidden={!mobileMenuOpen}
+        >
+          <div className="overflow-hidden">
+            <nav className="flex flex-col gap-1.5 px-4 pt-3 pb-6">
               {navLinks.map((link) => {
                 const isActive =
                   link.href === '/'
@@ -159,6 +227,7 @@ export function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
+                    onClick={(e) => handleNavClick(e, link.href)}
                     className={`px-4 py-3 rounded-xl text-base font-semibold flex items-center justify-between transition-colors ${
                       isActive
                         ? 'bg-[#dd1111]/10 text-[#dd1111] border border-[#dd1111]/30 font-bold'
@@ -176,6 +245,7 @@ export function Header() {
                   variant="glow"
                   size="md"
                   href="/#tarifs"
+                  onClick={(e) => handleNavClick(e, '/#tarifs')}
                   className="w-full justify-center font-bold"
                 >
                   Choisir un abonnement
@@ -184,6 +254,7 @@ export function Header() {
                   variant="outline"
                   size="md"
                   href="/contact"
+                  onClick={(e) => handleNavClick(e, '/contact')}
                   className="w-full justify-center"
                 >
                   Contacter le support
@@ -191,7 +262,7 @@ export function Header() {
               </div>
             </nav>
           </div>
-        )}
+        </div>
       </header>
     </>
   );

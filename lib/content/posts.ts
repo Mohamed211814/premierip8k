@@ -2111,7 +2111,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>2. La stabilité serveur et la fluidité à 50 / 60 FPS</h3>
 <p>
-  Pour les compétitions sportives en direct (Ligue 1, Ligue des Champions, Premier League, Formule 1, Top 14), une cadence d'affichage de <strong>50 ou 60 images par seconde (FPS)</strong> en Full HD ou 4K native est indispensable. Une cadence classique de 25 ou 30 FPS génère des saccades désagréables sur les mouvements rapides. Vérifiez également que le fournisseur déploie une infrastructure de serveurs européens redondants dotée d'une technologie Anti-Freeze pour absorber les pics d'audience. Retrouvez notre protocole de test dans notre <a href="/blog/premier-iptv-avis">dossier et avis sur la stabilité IPTV</a>.
+  Pour les compétitions sportives en direct (Ligue 1, Ligue des Champions, Premier League, Formule 1, Top 14), une cadence d'affichage de <strong>50 ou 60 images par seconde (FPS)</strong> en Full HD ou 4K native est indispensable. Une cadence classique de 25 ou 30 FPS génère des saccades désagréables sur les mouvements rapides. Vérifiez également que le fournisseur déploie une infrastructure de serveurs européens redondants dotée d'une technologie Anti-Freeze pour absorber les pics d'audience. Vous pouvez vous appuyer sur notre <a href="/blog/iptv-premier">guide d'évaluation et banc d'essai IPTV Premier</a> ainsi que sur notre <a href="/blog/premier-iptv-avis">dossier et avis sur la stabilité IPTV</a>.
 </p>
 
 <h3>3. La disponibilité de vos chaînes préférées et du guide EPG</h3>
@@ -2126,7 +2126,7 @@ export const blogPosts: BlogPost[] = [
 
 <h3>5. La simplicité d'installation et la configuration</h3>
 <p>
-  L'activation doit être instantanée. Dès la réception de vos identifiants (URL de serveur, identifiant, mot de passe), la saisie dans votre application doit charger l'ensemble des bouquets et des catégories en moins de cinq minutes sans manipulation technique rébarbative.
+  L'activation doit être instantanée. Dès la réception de vos identifiants (URL de serveur, identifiant, mot de passe), la saisie dans votre application doit charger l'ensemble des bouquets et des catégories en moins de cinq minutes sans manipulation technique rébarbative. Pour découvrir la procédure détaillée étape par étape, reportez-vous à notre <a href="/blog/premier-iptv">guide complet pour configurer votre service Premier IPTV</a>.
 </p>
 
 <h3>6. La réactivité et la langue du support client</h3>
@@ -2262,7 +2262,7 @@ export const blogPosts: BlogPost[] = [
 <h2>IPTV : quels sont les aspects légaux en France ?</h2>
 
 <p>
-  En France, l'accès aux retransmissions audiovisuelles est encadré par le <strong>Code de la propriété intellectuelle</strong> et régulé par l'<strong>Arcom</strong> (Autorité de régulation de la communication audiovisuelle et numérique).
+  En France, l'accès aux retransmissions audiovisuelles est encadré par le <strong>Code de la propriété intellectuelle</strong> et régulé par l'<a href="https://www.arcom.fr" target="_blank" rel="noopener noreferrer nofollow">Arcom (Autorité de régulation de la communication audiovisuelle et numérique)</a>, l'institution publique chargée de la protection des droits des créateurs et du suivi des offres audiovisuelles légales.
 </p>
 
 <p>
@@ -2284,7 +2284,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <p>
-  Pour optimiser les réglages de votre box internet française (DNS, connexion Ethernet, débit fibre), parcourez notre guide technique sur <a href="/blog/premier-iptv-france">Premier IPTV en France et les réglages box</a>.
+  Pour optimiser les réglages de votre box internet française (DNS, connexion Ethernet, débit fibre), parcourez notre guide technique sur <a href="/blog/premier-iptv-france">Premier IPTV en France et les réglages box</a>. Avant toute commande, nous vous recommandons également d'évaluer le débit réel et la latence de votre ligne à l'aide d'un outil de mesure indépendant comme <a href="https://www.speedtest.net" target="_blank" rel="noopener noreferrer nofollow">Speedtest by Ookla</a> : une connexion fibre ou VDSL stable affichant un débit descendant supérieur à 25-30 Mbit/s garantit une diffusion 4K 60 FPS sans buffering.
 </p>
 
 <h2>Questions fréquentes sur le choix d’un IPTV</h2>

@@ -12,7 +12,7 @@ import { constructMetadata } from '@/lib/seo/metadata';
 export const metadata: Metadata = constructMetadata({
   title: 'Premier IPTV : Meilleur Abonnement Premier IPTV 4K & FHD en France',
   description:
-    'Découvrez Premier IPTV : le service premier IPTV de télévision par internet haute qualité en France. Plus de 18 000 chaînes Premier IPTV 4K/FHD, 65 000 films et séries VOD, EPG 7 jours et serveurs Premier IPTV Anti Freeze v5 sans coupure.',
+    'Découvrez Premier IPTV : le service premier IPTV de télévision par internet haute qualité en France. Plus de 22 000 chaînes Premier IPTV 4K/FHD, 160 000 films et séries VOD, EPG 7 jours et serveurs Premier IPTV Anti Freeze v5 sans coupure.',
   canonical: '/',
 });
 
