@@ -79,6 +79,9 @@ export const metadata: Metadata = {
     images: [`${siteConfig.url}/logo.png`],
     creator: '@PremierIPTV_FR',
   },
+  verification: {
+    google: siteConfig.verification.google,
+  },
 };
 
 export default function RootLayout({
@@ -93,6 +96,7 @@ export default function RootLayout({
     >
       <head>
         <meta name="theme-color" content="#ffffff" />
+        <meta name="google-site-verification" content={siteConfig.verification.google} />
         <link rel="dns-prefetch" href="https://wa.me" />
       </head>
       <body className="min-h-full flex flex-col bg-white text-slate-900 selection:bg-[#dd1111]/20 selection:text-[#dd1111]">

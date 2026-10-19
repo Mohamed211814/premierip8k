@@ -23,7 +23,7 @@ export const siteConfig = {
     instagram: "https://instagram.com/premieriptv_fr",
   },
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "oADvQw2KnDZjH5gXyPbxgbR7-_h7_SSf1V3osn1xWk8",
     bing: process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION || "",
   },
   navigation: [
