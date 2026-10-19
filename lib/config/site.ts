@@ -4,7 +4,7 @@ export const siteConfig = {
   shortName: "PremierIPTV",
   description: "Premier IPTV : Service officiel d'abonnement premier IPTV en France. Plus de 22 000 chaînes Premier IPTV 4K/FHD, 160 000 films et séries VOD, serveurs Anti Freeze v5 et support 7j/7.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://premieriptv.fr",
-  ogImage: "/images/og-premier-iptv.jpg",
+  ogImage: "/logo.png",
   locale: "fr_FR",
   lang: "fr",
   contact: {

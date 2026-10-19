@@ -16,7 +16,9 @@ export function HeroSection() {
           alt="Abonnement Premier IPTV : Films et séries 4K en streaming"
           fill
           priority
-          sizes="100vw"
+          fetchPriority="high"
+          quality={70}
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1920px"
           className="object-cover object-center"
         />
       </div>

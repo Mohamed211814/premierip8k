@@ -10,7 +10,7 @@ export function OrganizationSchema() {
     name: siteConfig.name,
     legalName: siteConfig.legalName,
     url: siteConfig.url,
-    logo: `${siteConfig.url}/images/logo.png`,
+    logo: `${siteConfig.url}/logo.png`,
     description: siteConfig.description,
     contactPoint: {
       '@type': 'ContactPoint',

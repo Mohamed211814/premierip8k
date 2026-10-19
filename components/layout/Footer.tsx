@@ -69,6 +69,7 @@ export function Footer() {
                   alt="Premier IPTV"
                   width={44}
                   height={44}
+                  quality={80}
                   className="w-full h-full object-contain drop-shadow-md"
                 />
               </div>

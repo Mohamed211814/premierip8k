@@ -12,12 +12,14 @@ const geistSans = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
   display: 'swap',
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
   subsets: ['latin'],
   display: 'swap',
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -90,11 +92,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
-        <WebSiteSchema />
-        <OrganizationSchema />
         <meta name="theme-color" content="#ffffff" />
+        <link rel="dns-prefetch" href="https://wa.me" />
       </head>
       <body className="min-h-full flex flex-col bg-white text-slate-900 selection:bg-[#dd1111]/20 selection:text-[#dd1111]">
+        <WebSiteSchema />
+        <OrganizationSchema />
         <Header />
         <main id="main-content" className="flex-1">
           {children}

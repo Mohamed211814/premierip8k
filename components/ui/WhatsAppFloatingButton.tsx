@@ -35,7 +35,7 @@ export function WhatsAppFloatingButton() {
         className="relative w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-br from-[#25D366] to-[#128C7E] flex items-center justify-center text-white shadow-2xl shadow-emerald-500/50 hover:shadow-emerald-500/70 hover:scale-110 active:scale-95 transition-all duration-300 border-2 border-white focus:outline-none focus-visible:ring-4 focus-visible:ring-emerald-400"
       >
         {/* Subtle breathing ripple */}
-        <span className="absolute -inset-1 rounded-full bg-[#25D366]/30 animate-ping pointer-events-none opacity-60" />
+        <span className="absolute -inset-1 rounded-full bg-[#25D366]/30 animate-pulse pointer-events-none opacity-60" />
 
         <WhatsAppIcon className="w-7 h-7 sm:w-8 sm:h-8 fill-current drop-shadow-md relative z-10" />
       </a>
