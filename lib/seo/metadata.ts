@@ -25,7 +25,7 @@ export function constructMetadata({
   authors,
 }: ConstructMetadataProps = {}): Metadata {
   const url = canonical ? `${siteConfig.url}${canonical}` : siteConfig.url;
-  const hasBrand = title ? (title.includes(siteConfig.name) || title.toLowerCase().includes('iptv premier') || title.toLowerCase().includes('paris premi') || title.toLowerCase().includes('premier sports') || title.toLowerCase().includes('abonnement iptv') || title.toLowerCase().includes('meilleures iptv') || title.toLowerCase().includes('meilleurs iptv')) : false;
+  const hasBrand = title ? (title.includes(siteConfig.name) || title.toLowerCase().includes('iptv premier') || title.toLowerCase().includes('paris premi') || title.toLowerCase().includes('premier sports') || title.toLowerCase().includes('abonnement iptv') || title.toLowerCase().includes('meilleures iptv') || title.toLowerCase().includes('meilleurs iptv') || title.toLowerCase().includes('quel iptv choisir')) : false;
   const fullTitle = title 
     ? (hasBrand ? title : `${title} | ${siteConfig.name}`)
     : `${siteConfig.name} : N°1 de l'Abonnement Premier IPTV 4K & FHD en France`;
