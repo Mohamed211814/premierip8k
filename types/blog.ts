@@ -1,23 +1,23 @@
 export interface BlogPost {
   slug: string;
   title: string;
-  seoTitle: string;
+  seoTitle?: string;
   metaDescription: string;
-  excerpt: string;
+  excerpt?: string;
   content: string;
   author: {
     name: string;
-    role: string;
+    role?: string;
     avatar?: string;
   };
   publishedAt: string;
-  updatedAt: string;
-  readingTime: string;
-  category: string;
-  categorySlug: string;
-  tags: string[];
-  featuredImage: string;
-  featuredImageAlt: string;
+  updatedAt?: string;
+  readingTime?: string;
+  category?: string;
+  categorySlug?: string;
+  tags?: string[];
+  featuredImage?: string;
+  featuredImageAlt?: string;
   isPublished: boolean;
   relatedSlugs?: string[];
 }
@@ -25,6 +25,6 @@ export interface BlogPost {
 export interface BlogCategory {
   name: string;
   slug: string;
-  description: string;
-  iconName: string;
+  description?: string;
+  iconName?: string;
 }

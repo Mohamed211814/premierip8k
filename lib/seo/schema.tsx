@@ -85,28 +85,34 @@ export function BreadcrumbsSchema({
 }
 
 export function ArticleSchema({ post }: { post: BlogPost }) {
+  const imageUrl = post.featuredImage
+    ? (post.featuredImage.startsWith('http')
+        ? post.featuredImage
+        : `${siteConfig.url}${post.featuredImage}`)
+    : `${siteConfig.url}/images/og-premier-iptv.jpg`;
+
+  const isEnglish = post.slug.startsWith('what-is') || post.tags?.some(t => t.includes('premier sports'));
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: post.title,
+    headline: post.seoTitle || post.title,
     description: post.metaDescription,
-    image: post.featuredImage.startsWith('http')
-      ? post.featuredImage
-      : `${siteConfig.url}${post.featuredImage}`,
+    image: imageUrl,
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
-    inLanguage: 'fr-FR',
+    inLanguage: isEnglish ? 'en-GB' : 'fr-FR',
     author: {
       '@type': 'Person',
       name: post.author.name,
-      jobTitle: post.author.role,
+      jobTitle: post.author.role || (isEnglish ? 'Technical Broadcast Specialist' : 'Rédacteur technique'),
     },
     publisher: {
       '@type': 'Organization',
       name: siteConfig.name,
       logo: {
         '@type': 'ImageObject',
-        url: `${siteConfig.url}/images/logo.png`,
+        url: `${siteConfig.url}/logo.png`,
       },
     },
     mainEntityOfPage: {
