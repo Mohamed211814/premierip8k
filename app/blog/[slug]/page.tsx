@@ -38,6 +38,43 @@ function splitContentAtMiddle(html: string): [string, string] {
   return [html, ''];
 }
 
+/**
+ * Splits HTML content into:
+ * 1. Intro (paragraphs before the first <h2>)
+ * 2. First half (from first <h2> up to middle <h2>)
+ * 3. Second half (from middle <h2> through conclusion)
+ * This ensures CTA 1 is placed immediately after the introduction before H2,
+ * CTA 2 is around the middle, and CTA 3 is after the conclusion.
+ */
+function splitArticleSections(html: string): {
+  intro: string;
+  firstHalf: string;
+  secondHalf: string;
+} {
+  const firstH2Match = html.match(/<h2[^>]*>/i);
+  if (!firstH2Match || firstH2Match.index === undefined || firstH2Match.index === 0) {
+    const [c1, c2] = splitContentAtMiddle(html);
+    return { intro: '', firstHalf: c1, secondHalf: c2 };
+  }
+
+  const intro = html.slice(0, firstH2Match.index);
+  const remaining = html.slice(firstH2Match.index);
+
+  const h2Matches = [...remaining.matchAll(/<h2[^>]*>/gi)];
+  if (h2Matches.length >= 2) {
+    const middleIndex = Math.floor(h2Matches.length / 2);
+    const targetMatch = h2Matches[middleIndex];
+    const splitPos = targetMatch.index ?? 0;
+    return {
+      intro,
+      firstHalf: remaining.slice(0, splitPos),
+      secondHalf: remaining.slice(splitPos),
+    };
+  }
+
+  return { intro, firstHalf: remaining, secondHalf: '' };
+}
+
 export async function generateStaticParams() {
   const posts = getAllPosts();
   return posts.map((post) => ({
@@ -73,7 +110,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
-  const [contentFirstHalf, contentSecondHalf] = splitContentAtMiddle(post.content);
+  const { intro, firstHalf, secondHalf } = splitArticleSections(post.content);
   const isEnglish = post.slug.startsWith('what-is') || post.tags?.some((t) => t.includes('premier sports'));
   const locale: 'fr' | 'en' = isEnglish ? 'en' : 'fr';
 
@@ -136,28 +173,36 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
           )}
 
-          {/* CTA 1: Above Content */}
-          <BlogCta position="top" locale={locale} />
+          {/* Post Introduction */}
+          {intro && (
+            <div
+              className="prose-custom max-w-none text-base sm:text-lg leading-relaxed mb-6"
+              dangerouslySetInnerHTML={{ __html: intro }}
+            />
+          )}
+
+          {/* CTA 1: Immediately after introduction, before first major H2 */}
+          <BlogCta position="top" locale={locale} buttonText={post.ctaLabels?.top} />
 
           {/* Post Content - First Half */}
           <div
             className="prose-custom max-w-none text-base sm:text-lg leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: contentFirstHalf }}
+            dangerouslySetInnerHTML={{ __html: firstHalf }}
           />
 
           {/* CTA 2: Center of Content */}
-          {contentSecondHalf && (
+          {secondHalf && (
             <>
-              <BlogCta position="center" locale={locale} />
+              <BlogCta position="center" locale={locale} buttonText={post.ctaLabels?.center} />
               <div
                 className="prose-custom max-w-none text-base sm:text-lg leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: contentSecondHalf }}
+                dangerouslySetInnerHTML={{ __html: secondHalf }}
               />
             </>
           )}
 
           {/* CTA 3: Bottom of Content */}
-          <BlogCta position="bottom" locale={locale} />
+          <BlogCta position="bottom" locale={locale} buttonText={post.ctaLabels?.bottom} />
 
           {post.tags && post.tags.length > 0 && (
             <div className="mt-12 pt-6 border-t border-slate-200 flex flex-wrap items-center gap-2">

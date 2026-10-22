@@ -20,6 +20,11 @@ export interface BlogPost {
   featuredImageAlt?: string;
   isPublished: boolean;
   relatedSlugs?: string[];
+  ctaLabels?: {
+    top?: string;
+    center?: string;
+    bottom?: string;
+  };
 }
 
 export interface BlogCategory {

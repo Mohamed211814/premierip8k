@@ -6,9 +6,10 @@ interface BlogCtaProps {
   position: 'top' | 'center' | 'bottom';
   className?: string;
   locale?: 'fr' | 'en';
+  buttonText?: string;
 }
 
-export function BlogCta({ position, className = '', locale = 'fr' }: BlogCtaProps) {
+export function BlogCta({ position, className = '', locale = 'fr', buttonText }: BlogCtaProps) {
   const isEn = locale === 'en';
 
   if (position === 'top') {
@@ -42,7 +43,7 @@ export function BlogCta({ position, className = '', locale = 'fr' }: BlogCtaProp
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm sm:text-base text-white bg-[#dd1111] hover:bg-[#b00d0d] shadow-lg shadow-[#dd1111]/40 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] text-center"
             >
               <ShoppingCart className="w-4 h-4" />
-              <span>{isEn ? 'Get Your Subscription' : 'Commander mon abonnement'}</span>
+              <span>{buttonText || (isEn ? 'Get Your Subscription' : 'Découvrir nos abonnements')}</span>
               <ArrowRight className="w-4 h-4 ml-0.5" />
             </Link>
             <div className="flex items-center justify-center md:justify-end gap-3 text-[11px] text-slate-400">
@@ -90,7 +91,7 @@ export function BlogCta({ position, className = '', locale = 'fr' }: BlogCtaProp
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-extrabold text-base text-white bg-gradient-to-r from-[#dd1111] via-[#c40e0e] to-[#b00d0d] hover:brightness-110 shadow-2xl shadow-[#dd1111]/50 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
             >
               <Sparkles className="w-5 h-5 text-amber-300" />
-              <span>{isEn ? 'View Plans & Order Now' : 'Voir les formules & Commander'}</span>
+              <span>{buttonText || (isEn ? 'View Plans & Order Now' : 'Voir nos offres IPTV')}</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
@@ -138,7 +139,7 @@ export function BlogCta({ position, className = '', locale = 'fr' }: BlogCtaProp
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-extrabold text-base text-white bg-[#dd1111] hover:bg-[#b00d0d] shadow-xl shadow-[#dd1111]/40 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
           >
             <ShoppingCart className="w-5 h-5" />
-            <span>{isEn ? 'Order Now — Direct Access' : 'Commander maintenant — Accès Direct'}</span>
+            <span>{buttonText || (isEn ? 'Order Now — Direct Access' : 'Choisir mon abonnement')}</span>
             <ArrowRight className="w-5 h-5 ml-1" />
           </Link>
           <span className="text-xs text-slate-400">
