@@ -19,6 +19,7 @@ export function PricingSection({ showTitle = true, limit }: PricingSectionProps)
       id="tarifs"
       className="pt-24 pb-28 sm:py-20 lg:py-24 relative bg-white scroll-mt-24 md:scroll-mt-28"
     >
+      <div id="pricing" aria-hidden="true" className="scroll-mt-24 md:scroll-mt-28" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {showTitle && (
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
