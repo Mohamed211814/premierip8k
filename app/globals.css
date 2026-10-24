@@ -135,7 +135,14 @@ body {
 
 .prose-custom li {
   margin-bottom: 0.5rem;
+}
+
+.prose-custom ul > li {
   list-style-type: disc;
+}
+
+.prose-custom ol > li {
+  list-style-type: decimal;
 }
 
 .prose-custom strong {
