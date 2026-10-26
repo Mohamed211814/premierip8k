@@ -20,6 +20,25 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
+  async redirects() {
+    return [
+      {
+        source: '/pro-direct',
+        destination: '/blog/pro-direct',
+        permanent: true,
+      },
+      {
+        source: '/abonnement-iptv-smarters',
+        destination: '/blog/abonnement-iptv-smarters',
+        permanent: true,
+      },
+      {
+        source: '/canal-plus-tarif',
+        destination: '/blog/canal-plus-tarif',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
