@@ -47,6 +47,11 @@ const nextConfig: NextConfig = {
         destination: '/blog/media-player-classic-player',
         permanent: true,
       },
+      {
+        source: '/watch-for-party',
+        destination: '/blog/watch-for-party',
+        permanent: true,
+      },
     ];
   },
 };
