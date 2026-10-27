@@ -37,6 +37,16 @@ const nextConfig: NextConfig = {
         destination: '/blog/canal-plus-tarif',
         permanent: true,
       },
+      {
+        source: '/iptv-with-4k',
+        destination: '/blog/iptv-with-4k',
+        permanent: true,
+      },
+      {
+        source: '/media-player-classic-player',
+        destination: '/blog/media-player-classic-player',
+        permanent: true,
+      },
     ];
   },
 };
